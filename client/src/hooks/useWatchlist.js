@@ -3,13 +3,19 @@ import { getWatchlist, addTicker, removeTicker, updateTargets, autoTargets, auto
 
 const REFRESH_INTERVAL = 60;
 
+function getWsUrl() {
+  const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+  return `${proto}//${window.location.host}/ws`;
+}
+
 export function useWatchlist() {
   const [rows, setRows] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [secondsLeft, setSecondsLeft] = useState(REFRESH_INTERVAL);
-  const intervalRef = useRef(null);
+  const wsRef = useRef(null);
   const countdownRef = useRef(null);
+  const lastRowsRef = useRef(null);
 
   const fetchAll = useCallback(async (showLoading = false) => {
     if (showLoading) setLoading(true);
@@ -17,6 +23,7 @@ export function useWatchlist() {
     try {
       const data = await getWatchlist();
       setRows(data);
+      lastRowsRef.current = JSON.stringify(data);
       setSecondsLeft(REFRESH_INTERVAL);
     } catch (e) {
       setError(e.message);
@@ -26,16 +33,50 @@ export function useWatchlist() {
   }, []);
 
   useEffect(() => {
+    // Initial load via REST
     fetchAll(true);
 
-    intervalRef.current = setInterval(() => fetchAll(), REFRESH_INTERVAL * 1000);
+    // Countdown UI (purely cosmetic — no longer triggers fetch)
     countdownRef.current = setInterval(() => {
       setSecondsLeft((s) => (s <= 1 ? REFRESH_INTERVAL : s - 1));
     }, 1000);
 
+    // WebSocket for real-time updates from server
+    function connect() {
+      const ws = new WebSocket(getWsUrl());
+      wsRef.current = ws;
+
+      ws.onmessage = (event) => {
+        try {
+          const msg = JSON.parse(event.data);
+          if (msg.type === 'watchlist') {
+            const next = JSON.stringify(msg.rows);
+            if (next !== lastRowsRef.current) {
+              lastRowsRef.current = next;
+              setRows(msg.rows);
+              setSecondsLeft(REFRESH_INTERVAL);
+            }
+          }
+        } catch { /* ignore malformed messages */ }
+      };
+
+      ws.onclose = () => {
+        // Fallback: poll REST every 60s when WebSocket is disconnected
+        fetchAll();
+        setTimeout(connect, 5_000); // reconnect attempt after 5s
+      };
+
+      ws.onerror = () => ws.close();
+    }
+
+    connect();
+
     return () => {
-      clearInterval(intervalRef.current);
       clearInterval(countdownRef.current);
+      if (wsRef.current) {
+        wsRef.current.onclose = null; // prevent reconnect on intentional unmount
+        wsRef.current.close();
+      }
     };
   }, [fetchAll]);
 

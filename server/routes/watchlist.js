@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { fetchTickerData } from '../services/yahooFinance.js';
+import { broadcastWatchlist } from '../services/broadcast.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH    = join(__dirname, '../data/watchlist.json');
@@ -60,6 +61,52 @@ async function fetchWithConcurrency(tickers, limit = 25) {
   await Promise.all(Array.from({ length: Math.min(limit, tickers.length) }, worker));
   return results;
 }
+
+// Build the rows array from cache + watchlist targets (pure, no fetch)
+function buildRows(list, catalogMap) {
+  return list.map((item) => {
+    const cat = catalogMap[item.ticker] || {};
+    const raw = priceCache.data.get(item.ticker);
+    const tb  = item.targetBuy;
+    const ts  = item.targetSell;
+    const mediaSenal = tb && ts ? Math.round(((tb + ts) / 2) * 100) / 100 : null;
+    if (raw) {
+      return {
+        ...raw,
+        targetBuy: tb,
+        targetSell: ts,
+        mediaSenal,
+        signal: computeSignal(raw.price, tb, ts),
+        sector: cat.sector || null,
+        nombre: cat.nombre || null,
+        tipo:   cat.tipo   || null,
+      };
+    }
+    return {
+      ticker: item.ticker, targetBuy: tb, targetSell: ts, mediaSenal, signal: 'HOLD',
+      price: null, rsi: null, change24h: null, change360d: null,
+      weekLow52: null, weekHigh52: null, volume: null, exDate: null, fechaPago: null, beta: null,
+      error: true, sector: cat.sector || null, nombre: cat.nombre || null, tipo: cat.tipo || null,
+    };
+  });
+}
+
+// Fetch all tickers, refresh cache, broadcast to WebSocket clients
+async function refreshAndBroadcast() {
+  const list = readWatchlist();
+  if (!list.length) return;
+  const tickers = list.map((t) => t.ticker);
+  const results = await fetchWithConcurrency(tickers, 25);
+  priceCache.data.clear();
+  results.forEach((r, i) => {
+    if (r.status === 'fulfilled') priceCache.data.set(tickers[i], r.value);
+  });
+  priceCache.ts = Date.now();
+  broadcastWatchlist(buildRows(list, readCatalogMap()));
+}
+
+// Proactive server-side refresh every 60s (keeps clients updated without GET requests)
+setInterval(refreshAndBroadcast, 60_000);
 
 const router = Router();
 
@@ -139,35 +186,11 @@ router.get('/', async (req, res) => {
       if (r.status === 'fulfilled') priceCache.data.set(tickers[i], r.value);
     });
     priceCache.ts = Date.now();
+    broadcastWatchlist(buildRows(list, catalogMap));
   }
 
-  const rows = list.map((item) => {
-    const cat = catalogMap[item.ticker] || {};
-    const raw = priceCache.data.get(item.ticker);
-    const tb  = item.targetBuy;
-    const ts  = item.targetSell;
-    const mediaSenal = tb && ts ? Math.round(((tb + ts) / 2) * 100) / 100 : null;
-    if (raw) {
-      return {
-        ...raw,
-        targetBuy: tb,
-        targetSell: ts,
-        mediaSenal,
-        signal: computeSignal(raw.price, tb, ts),
-        sector: cat.sector || null,
-        nombre: cat.nombre || null,
-        tipo:   cat.tipo   || null,
-      };
-    }
-    return {
-      ticker: item.ticker, targetBuy: tb, targetSell: ts, mediaSenal, signal: 'HOLD',
-      price: null, rsi: null, change24h: null, change360d: null,
-      weekLow52: null, weekHigh52: null, volume: null, exDate: null, fechaPago: null, beta: null,
-      error: true, sector: cat.sector || null, nombre: cat.nombre || null, tipo: cat.tipo || null,
-    };
-  });
-
-  res.json(rows);
+  res.set('Cache-Control', 'public, max-age=60');
+  res.json(buildRows(list, catalogMap));
 });
 
 // POST /api/watchlist — add ticker
