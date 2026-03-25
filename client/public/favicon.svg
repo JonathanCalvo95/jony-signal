@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <!-- Zap / lightning bolt -->
+  <path
+    d="M18.5 4 L10 18h7l-3.5 10 12-14h-7.5z"
+    fill="white"
+    filter="url(#glow)"
+  />
+</svg>
