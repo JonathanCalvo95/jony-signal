@@ -13,6 +13,7 @@ export function useWatchlist() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [secondsLeft, setSecondsLeft] = useState(REFRESH_INTERVAL);
+  const [wsConnected, setWsConnected] = useState(false);
   const wsRef = useRef(null);
   const countdownRef = useRef(null);
   const lastRowsRef = useRef(null);
@@ -46,6 +47,8 @@ export function useWatchlist() {
       const ws = new WebSocket(getWsUrl());
       wsRef.current = ws;
 
+      ws.onopen = () => setWsConnected(true);
+
       ws.onmessage = (event) => {
         try {
           const msg = JSON.parse(event.data);
@@ -61,9 +64,9 @@ export function useWatchlist() {
       };
 
       ws.onclose = () => {
-        // Fallback: poll REST every 60s when WebSocket is disconnected
+        setWsConnected(false);
         fetchAll();
-        setTimeout(connect, 5_000); // reconnect attempt after 5s
+        setTimeout(connect, 5_000);
       };
 
       ws.onerror = () => ws.close();
@@ -121,5 +124,5 @@ export function useWatchlist() {
     await fetchAll();
   }
 
-  return { rows, loading, error, secondsLeft, fetchAll, addRow, removeRow, updateRow, autoTargetsRow, autoTargetsAllRows };
+  return { rows, loading, error, secondsLeft, wsConnected, fetchAll, addRow, removeRow, updateRow, autoTargetsRow, autoTargetsAllRows };
 }

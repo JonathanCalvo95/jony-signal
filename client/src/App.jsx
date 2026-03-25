@@ -23,7 +23,7 @@ const FILTER_COLORS = {
 
 function AppInner() {
   const toast = useToast();
-  const { rows, loading, error, secondsLeft, fetchAll, addRow, removeRow, updateRow, autoTargetsRow, autoTargetsAllRows } = useWatchlist();
+  const { rows, loading, error, secondsLeft, wsConnected, fetchAll, addRow, removeRow, updateRow, autoTargetsRow, autoTargetsAllRows } = useWatchlist();
   const [autoingAll,   setAutoingAll]   = useState(false);
   const [showModal,    setShowModal]    = useState(false);
   const [filterSignal, setFilterSignal] = useState(null);
@@ -102,6 +102,7 @@ function AppInner() {
         <div className="flex items-center gap-2">
           <RefreshCountdown
             secondsLeft={secondsLeft}
+            wsConnected={wsConnected}
             onRefresh={() => fetchAll()}
             loading={loading}
           />
