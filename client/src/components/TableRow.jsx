@@ -55,6 +55,7 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
 
   return (
     <tr
+      data-signal={row.signal}
       className="watchlist-row border-b transition-colors duration-150 cursor-default"
       style={{ borderColor: 'var(--border-subtle)', background: signalRowBg }}
     >
@@ -182,8 +183,8 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
           <button
             onClick={handleAuto}
             disabled={autoLoading || !row.weekLow52 || !row.weekHigh52}
-            className="flex items-center justify-center w-7 h-7 rounded-lg transition-all"
-            style={{ color: autoLoading ? 'rgba(167,139,250,0.4)' : 'rgba(167,139,250,0.6)' }}
+            className="icon-btn w-7 h-7"
+            style={{ color: autoLoading ? 'rgba(167,139,250,0.4)' : 'rgba(167,139,250,0.75)' }}
             title={`Auto-calcular targets de ${row.ticker} (52W range)`}
           >
             {autoLoading
@@ -193,7 +194,7 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
           </button>
           <button
             onClick={() => onRemove(row.ticker)}
-            className="flex items-center justify-center w-7 h-7 rounded-lg text-gray-700 hover:text-red-400 hover:bg-red-400/10 transition-all"
+            className="icon-btn w-7 h-7 text-gray-700 hover:!text-red-400 hover:!bg-red-400/10 hover:!border-red-400/20"
             title={`Eliminar ${row.ticker}`}
           >
             <Trash2 size={13} />

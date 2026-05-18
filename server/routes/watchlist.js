@@ -27,8 +27,8 @@ function computeSignal(price, targetBuy, targetSell) {
 
 function autoCalculateTargets(weekLow52, weekHigh52) {
   if (!weekLow52 || !weekHigh52) return null;
-  const targetBuy  = Math.round(((weekLow52 + weekHigh52) / 2) * 100) / 100;
-  const targetSell = Math.round((weekLow52 * 0.15 + weekHigh52 * 0.85) * 100) / 100;
+  const targetBuy  = Math.round((weekLow52  * 1.05) * 100) / 100;
+  const targetSell = Math.round((weekHigh52 * 0.95) * 100) / 100;
   if (targetSell <= targetBuy) return null;
   return { targetBuy, targetSell };
 }

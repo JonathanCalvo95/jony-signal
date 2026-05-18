@@ -77,24 +77,22 @@ function AppInner() {
         {/* Brand */}
         <div className="flex items-center gap-3">
           <div
-            className="flex items-center justify-center w-8 h-8 rounded-xl"
-            style={{ background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)', boxShadow: '0 0 16px rgba(59,130,246,0.35)' }}
+            className="brand-chip flex items-center justify-center w-9 h-9 rounded-xl"
+            style={{ background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)' }}
           >
-            <Zap size={15} fill="white" color="white" />
+            <Zap size={16} fill="white" color="white" />
           </div>
           <div>
-            <h1 className="text-white font-bold text-[15px] tracking-wide leading-none">
+            <h1 className="text-white font-bold text-[15px] tracking-wide leading-none bg-clip-text" style={{
+              backgroundImage: 'linear-gradient(90deg, #f0f4ff 0%, #c7d4ff 100%)',
+              WebkitBackgroundClip: 'text',
+              color: 'transparent',
+            }}>
               JONY SIGNAL
             </h1>
             <p className="text-[10px] uppercase tracking-widest leading-none mt-0.5" style={{ color: 'var(--text-muted)' }}>
               Lista de Seguimiento
             </p>
-          </div>
-
-          {/* Live dot */}
-          <div className="flex items-center gap-1.5 ml-2">
-            <span className="live-dot w-1.5 h-1.5 rounded-full bg-green-500" />
-            <span className="text-[10px] font-medium text-green-600 hidden sm:block">LIVE</span>
           </div>
         </div>
 
@@ -198,10 +196,10 @@ function AppInner() {
               <button
                 key={label}
                 onClick={() => setFilterSignal(value)}
-                className="px-3 py-1.5 rounded-lg text-[12px] font-medium transition-all"
+                className={`filter-pill px-3 py-1.5 rounded-lg text-[12px] font-medium ${active ? 'is-active' : ''}`}
                 style={
                   active
-                    ? { background: colors.bg, border: `1px solid ${colors.border}`, color: colors.active }
+                    ? { background: colors.bg, border: `1px solid ${colors.border}`, color: colors.active, boxShadow: `0 0 14px -6px ${colors.active}` }
                     : { background: 'transparent', border: '1px solid transparent', color: 'var(--text-muted)' }
                 }
               >

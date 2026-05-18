@@ -1,14 +1,22 @@
 import { TrendingUp, TrendingDown, Minus, Activity } from 'lucide-react';
 
-function StatCard({ label, value, icon: Icon, color, bg, border }) {
+function StatCard({ label, value, icon: Icon, color, bg, border, onClick, active }) {
+  const Wrap = onClick ? 'button' : 'div';
   return (
-    <div
-      className="flex items-center gap-3 px-4 py-3 rounded-xl border"
-      style={{ background: bg, borderColor: border }}
+    <Wrap
+      type={onClick ? 'button' : undefined}
+      onClick={onClick}
+      className="card-lift flex items-center gap-3 px-4 py-3 rounded-xl border text-left"
+      style={{
+        background: bg,
+        borderColor: active ? color : border,
+        boxShadow: active ? `0 0 0 1px ${color}55, 0 6px 20px -10px ${color}80` : undefined,
+        cursor: onClick ? 'pointer' : 'default',
+      }}
     >
       <div
-        className="flex items-center justify-center w-8 h-8 rounded-lg"
-        style={{ background: `${color}20` }}
+        className="flex items-center justify-center w-8 h-8 rounded-lg shrink-0"
+        style={{ background: `${color}22`, boxShadow: `inset 0 0 0 1px ${color}33` }}
       >
         <Icon size={15} style={{ color }} />
       </div>
@@ -20,7 +28,7 @@ function StatCard({ label, value, icon: Icon, color, bg, border }) {
           {label}
         </div>
       </div>
-    </div>
+    </Wrap>
   );
 }
 
