@@ -60,7 +60,7 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
       style={{ borderColor: 'var(--border-subtle)', background: signalRowBg }}
     >
       {/* TICKER */}
-      <td className="px-4 py-3 text-left sticky left-0 z-10" style={{ background: 'inherit' }}>
+      <td className="px-4 py-3 text-left min-w-[120px]">
         <div className="flex items-center gap-2">
           {row.error && (
             <AlertTriangle size={12} className="text-yellow-500 shrink-0" />

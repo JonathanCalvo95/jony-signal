@@ -70,21 +70,12 @@ body {
 
 /* Table striping */
 .watchlist-row:nth-child(even) { background-color: rgba(255,255,255,0.015); }
-.watchlist-row { position: relative; transition: background-color 0.18s var(--ease-out-quint); }
+.watchlist-row { transition: background-color 0.18s var(--ease-out-quint), box-shadow 0.2s var(--ease-out-quint); }
 .watchlist-row:hover { background-color: var(--bg-hover) !important; }
-.watchlist-row::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 2px;
-  background: transparent;
-  transition: background 0.2s var(--ease-out-quint);
-  pointer-events: none;
-}
-.watchlist-row[data-signal="BARATA"]::before { background: linear-gradient(180deg, transparent, var(--green) 30%, var(--green) 70%, transparent); opacity: 0; }
-.watchlist-row[data-signal="CARA"]::before   { background: linear-gradient(180deg, transparent, var(--red) 30%, var(--red) 70%, transparent); opacity: 0; }
-.watchlist-row[data-signal="HOLD"]::before   { background: linear-gradient(180deg, transparent, var(--yellow) 30%, var(--yellow) 70%, transparent); opacity: 0; }
-.watchlist-row:hover::before { opacity: 1; }
+/* Inset side indicator on hover via box-shadow (no position needed → safe for table rows) */
+.watchlist-row[data-signal="BARATA"]:hover { box-shadow: inset 2px 0 0 0 var(--green); }
+.watchlist-row[data-signal="CARA"]:hover   { box-shadow: inset 2px 0 0 0 var(--red); }
+.watchlist-row[data-signal="HOLD"]:hover   { box-shadow: inset 2px 0 0 0 var(--yellow); }
 
 /* Glow effect on accent elements */
 .glow-accent { box-shadow: 0 0 20px var(--accent-glow); }
