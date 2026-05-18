@@ -105,14 +105,14 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
 
       {/* 52W LOW */}
       <td className="px-3 py-3 text-right">
-        <span className="font-mono text-[13px] text-gray-400">
+        <span className="font-mono text-[13px]" style={{ color: 'rgba(34,212,122,0.65)' }}>
           {formatPrice(row.weekLow52)}
         </span>
       </td>
 
       {/* 52W HIGH */}
       <td className="px-3 py-3 text-right">
-        <span className="font-mono text-[13px] text-gray-400">
+        <span className="font-mono text-[13px]" style={{ color: 'rgba(240,78,106,0.65)' }}>
           {formatPrice(row.weekHigh52)}
         </span>
       </td>
@@ -121,6 +121,7 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
       <td className="px-3 py-3 text-right min-w-[100px]">
         <EditableCell
           value={row.targetBuy}
+          tone="buy"
           onSave={(v) => onUpdate(row.ticker, { targetBuy: v })}
         />
       </td>
@@ -129,6 +130,7 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
       <td className="px-3 py-3 text-right min-w-[100px]">
         <EditableCell
           value={row.targetSell}
+          tone="sell"
           onSave={(v) => onUpdate(row.ticker, { targetSell: v })}
         />
       </td>

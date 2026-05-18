@@ -1,7 +1,13 @@
 import { useState, useRef, useEffect } from 'react';
 import { Pencil, Check } from 'lucide-react';
 
-export default function EditableCell({ value, onSave, placeholder = '--' }) {
+const TONE_COLORS = {
+  buy:  'text-emerald-400 hover:text-emerald-300',
+  sell: 'text-red-400 hover:text-red-300',
+  none: 'text-gray-200 hover:text-blue-400',
+};
+
+export default function EditableCell({ value, onSave, placeholder = '--', tone = 'none' }) {
   const [editing, setEditing] = useState(false);
   const [input, setInput]     = useState('');
   const [saved,  setSaved]    = useState(false);
@@ -62,12 +68,12 @@ export default function EditableCell({ value, onSave, placeholder = '--' }) {
     );
   }
 
+  const toneClass = saved ? 'text-green-400' : (TONE_COLORS[tone] || TONE_COLORS.none);
+
   return (
     <button
       onClick={startEdit}
-      className={`text-right w-full font-mono text-[13px] transition-colors group flex items-center justify-end gap-1.5 ${
-        saved ? 'text-green-400' : 'text-gray-200 hover:text-blue-400'
-      }`}
+      className={`text-right w-full font-mono text-[13px] font-semibold transition-colors group flex items-center justify-end gap-1.5 ${toneClass}`}
     >
       {saved ? <Check size={11} className="text-green-400" /> : null}
       <span>${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
