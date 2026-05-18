@@ -105,14 +105,14 @@ export default function TableRow({ row, onUpdate, onRemove, onAutoTargets }) {
 
       {/* 52W LOW */}
       <td className="px-3 py-3 text-right">
-        <span className="font-mono text-[13px]" style={{ color: 'rgba(34,212,122,0.65)' }}>
+        <span className="font-mono text-[13px] text-gray-400">
           {formatPrice(row.weekLow52)}
         </span>
       </td>
 
       {/* 52W HIGH */}
       <td className="px-3 py-3 text-right">
-        <span className="font-mono text-[13px]" style={{ color: 'rgba(240,78,106,0.65)' }}>
+        <span className="font-mono text-[13px] text-gray-400">
           {formatPrice(row.weekHigh52)}
         </span>
       </td>
