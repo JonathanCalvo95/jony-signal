@@ -1,457 +1,457 @@
 [
   {
     "ticker": "QQQ",
-    "targetBuy": 530.86,
+    "targetBuy": 613.8,
     "targetSell": 685.93
   },
   {
     "ticker": "SPY",
-    "targetBuy": 604.38,
+    "targetBuy": 662.57,
     "targetSell": 712.05
   },
   {
     "ticker": "AAPL",
-    "targetBuy": 203.13,
+    "targetBuy": 248.33,
     "targetSell": 288.04
   },
   {
     "ticker": "MSFT",
-    "targetBuy": 374.09,
+    "targetBuy": 455.87,
     "targetSell": 527.68
   },
   {
     "ticker": "GOOGL",
-    "targetBuy": 170.1,
+    "targetBuy": 285.31,
     "targetSell": 388.18
   },
   {
     "ticker": "ORCL",
-    "targetBuy": 141.3,
+    "targetBuy": 240.15,
     "targetSell": 328.43
   },
   {
     "ticker": "IBM",
-    "targetBuy": 219.41,
-    "targetSell": 308
+    "targetBuy": 218.71,
+    "targetSell": 308.65
   },
   {
     "ticker": "SAP",
-    "targetBuy": 166.51,
+    "targetBuy": 163.34,
     "targetSell": 297.62
   },
   {
     "ticker": "INFY",
-    "targetBuy": 12.14,
+    "targetBuy": 11.91,
     "targetSell": 28.5
   },
   {
     "ticker": "ACN",
-    "targetBuy": 163.61,
+    "targetBuy": 160.49,
     "targetSell": 306.72
   },
   {
     "ticker": "ADP",
-    "targetBuy": 197.57,
+    "targetBuy": 259.05,
     "targetSell": 313.43
   },
   {
     "ticker": "CRM",
-    "targetBuy": 171.7,
+    "targetBuy": 168.43,
     "targetSell": 275.4
   },
   {
     "ticker": "ADBE",
-    "targetBuy": 235.34,
+    "targetBuy": 230.85,
     "targetSell": 401.8
   },
   {
     "ticker": "NOW",
-    "targetBuy": 85.3,
+    "targetBuy": 83.68,
     "targetSell": 200.9
   },
   {
     "ticker": "TEAM",
-    "targetBuy": 58.81,
+    "targetBuy": 139.3,
     "targetSell": 211.46
   },
   {
     "ticker": "DOCU",
-    "targetBuy": 42.17,
+    "targetBuy": 41.36,
     "targetSell": 89.94
   },
   {
     "ticker": "TWLO",
-    "targetBuy": 96.43,
+    "targetBuy": 147.78,
     "targetSell": 193.52
   },
   {
     "ticker": "ZM",
-    "targetBuy": 72.61,
+    "targetBuy": 90.36,
     "targetSell": 105.98
   },
   {
     "ticker": "PATH",
-    "targetBuy": 9.66,
+    "targetBuy": 9.48,
     "targetSell": 18.85
   },
   {
     "ticker": "SNOW",
-    "targetBuy": 124.22,
+    "targetBuy": 199.49,
     "targetSell": 266.64
   },
   {
     "ticker": "UPST",
-    "targetBuy": 25.16,
+    "targetBuy": 24.68,
     "targetSell": 82.93
   },
   {
     "ticker": "EA",
-    "targetBuy": 148.25,
+    "targetBuy": 173.04,
     "targetSell": 194.65
   },
   {
     "ticker": "RBLX",
-    "targetBuy": 42.16,
+    "targetBuy": 41.35,
     "targetSell": 143.06
   },
   {
     "ticker": "SHOP",
-    "targetBuy": 98.7,
+    "targetBuy": 96.82,
     "targetSell": 173.08
   },
   {
     "ticker": "PANW",
-    "targetBuy": 146.55,
+    "targetBuy": 194.21,
     "targetSell": 236.41
   },
   {
     "ticker": "SPGI",
-    "targetBuy": 400.69,
+    "targetBuy": 393.06,
     "targetSell": 550.1
   },
   {
     "ticker": "MSI",
-    "targetBuy": 377.33,
+    "targetBuy": 425.79,
     "targetSell": 467.61
   },
   {
     "ticker": "NVDA",
-    "targetBuy": 135.62,
+    "targetBuy": 182.85,
     "targetSell": 224.71
   },
   {
     "ticker": "AMD",
-    "targetBuy": 113.05,
+    "targetBuy": 288.45,
     "targetSell": 445.76
   },
   {
     "ticker": "INTC",
-    "targetBuy": 19.92,
+    "targetBuy": 75.86,
     "targetSell": 126.11
   },
   {
     "ticker": "QCOM",
-    "targetBuy": 128.09,
+    "targetBuy": 184.95,
     "targetSell": 235.51
   },
   {
     "ticker": "AMAT",
-    "targetBuy": 161.14,
+    "targetBuy": 300.96,
     "targetSell": 426.03
   },
   {
     "ticker": "TXN",
-    "targetBuy": 160.37,
+    "targetBuy": 231.51,
     "targetSell": 294.78
   },
   {
     "ticker": "LRCX",
-    "targetBuy": 83.46,
+    "targetBuy": 190.75,
     "targetSell": 286.9
   },
   {
     "ticker": "ADI",
-    "targetBuy": 216.3,
+    "targetBuy": 320.86,
     "targetSell": 413.93
   },
   {
     "ticker": "MRVL",
-    "targetBuy": 61.54,
+    "targetBuy": 125.38,
     "targetSell": 182.54
   },
   {
     "ticker": "MU",
-    "targetBuy": 95.48,
+    "targetBuy": 454.8,
     "targetSell": 777.74
   },
   {
     "ticker": "ASML",
-    "targetBuy": 717.65,
+    "targetBuy": 1143.49,
     "targetSell": 1523.32
   },
   {
     "ticker": "TSM",
-    "targetBuy": 198.25,
+    "targetBuy": 305.39,
     "targetSell": 400.87
   },
   {
     "ticker": "ARM",
-    "targetBuy": 105.02,
+    "targetBuy": 169.76,
     "targetSell": 227.52
   },
   {
     "ticker": "AVGO",
-    "targetBuy": 232.68,
+    "targetBuy": 331.98,
     "targetSell": 420.24
   },
   {
     "ticker": "ALAB",
-    "targetBuy": 89.02,
+    "targetBuy": 173.84,
     "targetSell": 249.75
   },
   {
     "ticker": "CLS",
-    "targetBuy": 114.54,
+    "targetBuy": 272.05,
     "targetSell": 413.25
   },
   {
     "ticker": "GLW",
-    "targetBuy": 49.77,
+    "targetBuy": 129.6,
     "targetSell": 201.2
   },
   {
     "ticker": "SMH",
-    "targetBuy": 246.32,
+    "targetBuy": 407.88,
     "targetSell": 552.11
   },
   {
     "ticker": "AI",
-    "targetBuy": 8.06,
+    "targetBuy": 7.91,
     "targetSell": 28.73
   },
   {
     "ticker": "PLTR",
-    "targetBuy": 124.88,
+    "targetBuy": 122.5,
     "targetSell": 197.14
   },
   {
     "ticker": "TEM",
-    "targetBuy": 43.82,
+    "targetBuy": 42.98,
     "targetSell": 99.1
   },
   {
     "ticker": "RGTI",
-    "targetBuy": 10.82,
+    "targetBuy": 10.61,
     "targetSell": 55.24
   },
   {
     "ticker": "CRWV",
-    "targetBuy": 66.99,
+    "targetBuy": 125.4,
     "targetSell": 177.65
   },
   {
     "ticker": "OKLO",
-    "targetBuy": 36.62,
+    "targetBuy": 35.93,
     "targetSell": 184.15
   },
   {
     "ticker": "RKLB",
-    "targetBuy": 25.12,
+    "targetBuy": 81.15,
     "targetSell": 131.46
   },
   {
     "ticker": "ASTS",
-    "targetBuy": 23.59,
+    "targetBuy": 76.18,
     "targetSell": 123.4
   },
   {
     "ticker": "SATL",
-    "targetBuy": 1.32,
+    "targetBuy": 5.72,
     "targetSell": 9.68
   },
   {
     "ticker": "SPCE",
-    "targetBuy": 2.24,
+    "targetBuy": 2.19,
     "targetSell": 5.31
   },
   {
     "ticker": "META",
-    "targetBuy": 546.27,
+    "targetBuy": 658.26,
     "targetSell": 756.44
   },
   {
     "ticker": "NFLX",
-    "targetBuy": 78.76,
+    "targetBuy": 104.56,
     "targetSell": 127.41
   },
   {
     "ticker": "DIS",
-    "targetBuy": 96.8,
+    "targetBuy": 108.44,
     "targetSell": 118.46
   },
   {
     "ticker": "T",
-    "targetBuy": 24.1,
+    "targetBuy": 26.37,
     "targetSell": 28.3
   },
   {
     "ticker": "VZ",
-    "targetBuy": 40.31,
+    "targetBuy": 45.04,
     "targetSell": 49.1
   },
   {
     "ticker": "TMUS",
-    "targetBuy": 190.43,
+    "targetBuy": 186.8,
     "targetSell": 248.48
   },
   {
     "ticker": "VOD",
-    "targetBuy": 10.02,
+    "targetBuy": 13.08,
     "targetSell": 15.78
   },
   {
     "ticker": "ERIC",
-    "targetBuy": 7.52,
+    "targetBuy": 10.01,
     "targetSell": 12.22
   },
   {
     "ticker": "SNAP",
-    "targetBuy": 4,
+    "targetBuy": 7.11,
     "targetSell": 9.89
   },
   {
     "ticker": "PINS",
-    "targetBuy": 14.53,
+    "targetBuy": 26.89,
     "targetSell": 37.93
   },
   {
     "ticker": "SPOT",
-    "targetBuy": 425.25,
+    "targetBuy": 417.15,
     "targetSell": 745.75
   },
   {
     "ticker": "ROKU",
-    "targetBuy": 71.05,
+    "targetBuy": 99.53,
     "targetSell": 124.82
   },
   {
     "ticker": "SONY",
-    "targetBuy": 20.61,
+    "targetBuy": 24.99,
     "targetSell": 28.82
   },
   {
     "ticker": "BIDU",
-    "targetBuy": 85.23,
+    "targetBuy": 123.24,
     "targetSell": 157.04
   },
   {
     "ticker": "NTES",
-    "targetBuy": 114.1,
+    "targetBuy": 111.93,
     "targetSell": 151.57
   },
   {
     "ticker": "SE",
-    "targetBuy": 80.9,
+    "targetBuy": 79.36,
     "targetSell": 189.34
   },
   {
     "ticker": "XLC",
-    "targetBuy": 104.58,
+    "targetBuy": 110,
     "targetSell": 114.38
   },
   {
     "ticker": "JPM",
-    "targetBuy": 268.8,
+    "targetBuy": 296.63,
     "targetSell": 320.39
   },
   {
     "ticker": "V",
-    "targetBuy": 308.58,
+    "targetBuy": 334.7,
     "targetSell": 356.73
   },
   {
     "ticker": "MA",
-    "targetBuy": 504.53,
+    "targetBuy": 541.14,
     "targetSell": 571.68
   },
   {
     "ticker": "GS",
-    "targetBuy": 611.63,
+    "targetBuy": 783.6,
     "targetSell": 935.47
   },
   {
     "ticker": "WFC",
-    "targetBuy": 75.5,
+    "targetBuy": 74.06,
     "targetSell": 92.87
   },
   {
     "ticker": "C",
-    "targetBuy": 75.23,
+    "targetBuy": 103.47,
     "targetSell": 128.53
   },
   {
     "ticker": "AXP",
-    "targetBuy": 295.53,
+    "targetBuy": 334.48,
     "targetSell": 368.12
   },
   {
     "ticker": "BK",
-    "targetBuy": 91.78,
+    "targetBuy": 113.28,
     "targetSell": 132.19
   },
   {
     "ticker": "BX",
-    "targetBuy": 106.82,
+    "targetBuy": 104.78,
     "targetSell": 180.59
   },
   {
     "ticker": "USB",
-    "targetBuy": 44.32,
+    "targetBuy": 51.7,
     "targetSell": 58.13
   },
   {
     "ticker": "HSBC",
-    "targetBuy": 61.05,
+    "targetBuy": 76.47,
     "targetSell": 90.06
   },
   {
     "ticker": "BBVA",
-    "targetBuy": 15.36,
+    "targetBuy": 20.42,
     "targetSell": 24.89
   },
   {
     "ticker": "BCS",
-    "targetBuy": 18.08,
+    "targetBuy": 22.46,
     "targetSell": 26.32
   },
   {
     "ticker": "ING",
-    "targetBuy": 21.41,
+    "targetBuy": 25.79,
     "targetSell": 29.62
   },
   {
     "ticker": "TD",
-    "targetBuy": 67.33,
+    "targetBuy": 86.67,
     "targetSell": 103.76
   },
   {
     "ticker": "MUFG",
-    "targetBuy": 13.85,
+    "targetBuy": 16.67,
     "targetSell": 19.14
   },
   {
     "ticker": "IBN",
-    "targetBuy": 26.33,
+    "targetBuy": 25.83,
     "targetSell": 32.84
   },
   {
     "ticker": "HDB",
-    "targetBuy": 24.94,
+    "targetBuy": 24.46,
     "targetSell": 37.81
   },
   {
     "ticker": "PYPL",
-    "targetBuy": 40.38,
+    "targetBuy": 39.61,
     "targetSell": 75.52
   },
   {
@@ -461,672 +461,672 @@
   },
   {
     "ticker": "AIG",
-    "targetBuy": 74.81,
+    "targetBuy": 79.35,
     "targetSell": 83.09
   },
   {
     "ticker": "XLF",
-    "targetBuy": 50.05,
+    "targetBuy": 52.1,
     "targetSell": 53.69
   },
   {
     "ticker": "UNH",
-    "targetBuy": 246.33,
+    "targetBuy": 319.38,
     "targetSell": 383.94
   },
   {
     "ticker": "JNJ",
-    "targetBuy": 156.49,
+    "targetBuy": 200.38,
     "targetSell": 239.12
   },
   {
     "ticker": "LLY",
-    "targetBuy": 654.97,
+    "targetBuy": 878.87,
     "targetSell": 1077.25
   },
   {
     "ticker": "MRK",
-    "targetBuy": 79.17,
+    "targetBuy": 100.27,
     "targetSell": 118.88
   },
   {
     "ticker": "ABBV",
-    "targetBuy": 189.26,
+    "targetBuy": 212.53,
     "targetSell": 232.57
   },
   {
     "ticker": "PFE",
-    "targetBuy": 23.77,
+    "targetBuy": 25.7,
     "targetSell": 27.31
   },
   {
     "ticker": "MRNA",
-    "targetBuy": 23.39,
+    "targetBuy": 40.92,
     "targetSell": 56.57
   },
   {
     "ticker": "AMGN",
-    "targetBuy": 281.22,
+    "targetBuy": 329.56,
     "targetSell": 371.73
   },
   {
     "ticker": "BIIB",
-    "targetBuy": 127.1,
+    "targetBuy": 163.51,
     "targetSell": 195.67
   },
   {
     "ticker": "GILD",
-    "targetBuy": 107.98,
+    "targetBuy": 130.07,
     "targetSell": 149.43
   },
   {
     "ticker": "VRTX",
-    "targetBuy": 380.63,
+    "targetBuy": 435.21,
     "targetSell": 482.52
   },
   {
     "ticker": "AZN",
-    "targetBuy": 144.08,
+    "targetBuy": 174.97,
     "targetSell": 202.07
   },
   {
     "ticker": "NVS",
-    "targetBuy": 114.75,
+    "targetBuy": 139.88,
     "targetSell": 161.94
   },
   {
     "ticker": "GSK",
-    "targetBuy": 37.22,
+    "targetBuy": 48.58,
     "targetSell": 58.62
   },
   {
     "ticker": "SAN",
-    "targetBuy": 8.14,
+    "targetBuy": 10.5,
     "targetSell": 12.58
   },
   {
     "ticker": "ABT",
-    "targetBuy": 86.07,
+    "targetBuy": 84.43,
     "targetSell": 132.11
   },
   {
     "ticker": "MDT",
-    "targetBuy": 78.12,
+    "targetBuy": 76.63,
     "targetSell": 101.01
   },
   {
     "ticker": "BMY",
-    "targetBuy": 44.65,
+    "targetBuy": 52.71,
     "targetSell": 59.75
   },
   {
     "ticker": "DHR",
-    "targetBuy": 168.98,
+    "targetBuy": 165.76,
     "targetSell": 230.66
   },
   {
     "ticker": "TMO",
-    "targetBuy": 404.73,
+    "targetBuy": 514.73,
     "targetSell": 611.79
   },
   {
     "ticker": "ISRG",
-    "targetBuy": 438.63,
+    "targetBuy": 430.27,
     "targetSell": 573.69
   },
   {
     "ticker": "IBB",
-    "targetBuy": 125.77,
+    "targetBuy": 149.71,
     "targetSell": 170.66
   },
   {
     "ticker": "XLV",
-    "targetBuy": 134.36,
+    "targetBuy": 144.28,
     "targetSell": 152.56
   },
   {
     "ticker": "AMZN",
-    "targetBuy": 205.8,
+    "targetBuy": 237.28,
     "targetSell": 264.63
   },
   {
     "ticker": "TSLA",
-    "targetBuy": 286.87,
+    "targetBuy": 386.02,
     "targetSell": 473.89
   },
   {
     "ticker": "MCD",
-    "targetBuy": 285.58,
+    "targetBuy": 280.14,
     "targetSell": 324.66
   },
   {
     "ticker": "NKE",
-    "targetBuy": 43.42,
+    "targetBuy": 42.59,
     "targetSell": 76.16
   },
   {
     "ticker": "SBUX",
-    "targetBuy": 81.89,
+    "targetBuy": 93.44,
     "targetSell": 103.44
   },
   {
     "ticker": "GM",
-    "targetBuy": 49.16,
+    "targetBuy": 67.22,
     "targetSell": 83.24
   },
   {
     "ticker": "F",
-    "targetBuy": 10.37,
+    "targetBuy": 12.41,
     "targetSell": 14.19
   },
   {
     "ticker": "TM",
-    "targetBuy": 175.54,
+    "targetBuy": 208.04,
     "targetSell": 236.46
   },
   {
     "ticker": "HMC",
-    "targetBuy": 24.41,
+    "targetBuy": 23.95,
     "targetSell": 33.15
   },
   {
     "ticker": "STLA",
-    "targetBuy": 6.59,
+    "targetBuy": 6.47,
     "targetSell": 11.61
   },
   {
     "ticker": "HOG",
-    "targetBuy": 17.94,
+    "targetBuy": 24.17,
     "targetSell": 29.69
   },
   {
     "ticker": "CCL",
-    "targetBuy": 22.7,
+    "targetBuy": 27.83,
     "targetSell": 32.33
   },
   {
     "ticker": "ABNB",
-    "targetBuy": 116.35,
+    "targetBuy": 129.03,
     "targetSell": 139.89
   },
   {
     "ticker": "BKNG",
-    "targetBuy": 158.15,
+    "targetBuy": 155.14,
     "targetSell": 221.9
   },
   {
     "ticker": "EBAY",
-    "targetBuy": 74.26,
+    "targetBuy": 93.78,
     "targetSell": 110.99
   },
   {
     "ticker": "ETSY",
-    "targetBuy": 46.2,
+    "targetBuy": 60.26,
     "targetSell": 72.69
   },
   {
     "ticker": "UBER",
-    "targetBuy": 71.88,
+    "targetBuy": 70.51,
     "targetSell": 96.89
   },
   {
     "ticker": "TGT",
-    "targetBuy": 87.61,
+    "targetBuy": 108.27,
     "targetSell": 126.45
   },
   {
     "ticker": "LOW",
-    "targetBuy": 220.85,
+    "targetBuy": 216.64,
     "targetSell": 278.41
   },
   {
     "ticker": "ROST",
-    "targetBuy": 130.71,
+    "targetBuy": 177.83,
     "targetSell": 219.6
   },
   {
     "ticker": "LVS",
-    "targetBuy": 41.25,
+    "targetBuy": 54.87,
     "targetSell": 66.93
   },
   {
     "ticker": "RACE",
-    "targetBuy": 328.14,
+    "targetBuy": 321.89,
     "targetSell": 493.15
   },
   {
     "ticker": "NIO",
-    "targetBuy": 3.51,
+    "targetBuy": 5.68,
     "targetSell": 7.62
   },
   {
     "ticker": "XPEV",
-    "targetBuy": 15.66,
+    "targetBuy": 15.36,
     "targetSell": 26.82
   },
   {
     "ticker": "KO",
-    "targetBuy": 68.62,
+    "targetBuy": 73.68,
     "targetSell": 77.9
   },
   {
     "ticker": "PEP",
-    "targetBuy": 133.98,
+    "targetBuy": 149.54,
     "targetSell": 162.91
   },
   {
     "ticker": "PG",
-    "targetBuy": 144.5,
+    "targetBuy": 141.75,
     "targetSell": 162.44
   },
   {
     "ticker": "WMT",
-    "targetBuy": 98.1,
+    "targetBuy": 114.06,
     "targetSell": 127.96
   },
   {
     "ticker": "COST",
-    "targetBuy": 886.26,
+    "targetBuy": 961.95,
     "targetSell": 1025.84
   },
   {
     "ticker": "MO",
-    "targetBuy": 57.44,
+    "targetBuy": 64.63,
     "targetSell": 70.83
   },
   {
     "ticker": "PM",
-    "targetBuy": 149.22,
+    "targetBuy": 167.53,
     "targetSell": 183.3
   },
   {
     "ticker": "CL",
-    "targetBuy": 78.28,
+    "targetBuy": 86.94,
     "targetSell": 94.36
   },
   {
     "ticker": "KMB",
-    "targetBuy": 97.04,
+    "targetBuy": 95.19,
     "targetSell": 137.09
   },
   {
     "ticker": "UL",
-    "targetBuy": 57.7,
+    "targetBuy": 56.6,
     "targetSell": 71.23
   },
   {
     "ticker": "DEO",
-    "targetBuy": 76.07,
+    "targetBuy": 94.43,
     "targetSell": 110.59
   },
   {
     "ticker": "MDLZ",
-    "targetBuy": 53.76,
+    "targetBuy": 61.18,
     "targetSell": 67.59
   },
   {
     "ticker": "HSY",
-    "targetBuy": 157.54,
+    "targetBuy": 194.76,
     "targetSell": 227.51
   },
   {
     "ticker": "XLY",
-    "targetBuy": 109.05,
+    "targetBuy": 114.43,
     "targetSell": 118.76
   },
   {
     "ticker": "XLP",
-    "targetBuy": 78.92,
+    "targetBuy": 82.65,
     "targetSell": 85.63
   },
   {
     "ticker": "XOM",
-    "targetBuy": 106.25,
+    "targetBuy": 138.8,
     "targetSell": 167.59
   },
   {
     "ticker": "CVX",
-    "targetBuy": 140.46,
+    "targetBuy": 174.24,
     "targetSell": 203.97
   },
   {
     "ticker": "BP",
-    "targetBuy": 29.83,
+    "targetBuy": 38.34,
     "targetSell": 45.86
   },
   {
     "ticker": "SHEL",
-    "targetBuy": 68.65,
+    "targetBuy": 80.14,
     "targetSell": 90.16
   },
   {
     "ticker": "TTE",
-    "targetBuy": 60.12,
+    "targetBuy": 75.72,
     "targetSell": 89.46
   },
   {
     "ticker": "E",
-    "targetBuy": 30.22,
+    "targetBuy": 43.39,
     "targetSell": 55.1
   },
   {
     "ticker": "EQNR",
-    "targetBuy": 23.37,
+    "targetBuy": 32.86,
     "targetSell": 41.29
   },
   {
     "ticker": "SLB",
-    "targetBuy": 33.22,
+    "targetBuy": 44.62,
     "targetSell": 54.71
   },
   {
     "ticker": "HAL",
-    "targetBuy": 20.35,
+    "targetBuy": 31.16,
     "targetSell": 40.78
   },
   {
     "ticker": "BKR",
-    "targetBuy": 37.62,
+    "targetBuy": 53.12,
     "targetSell": 66.89
   },
   {
     "ticker": "OXY",
-    "targetBuy": 40.74,
+    "targetBuy": 53.13,
     "targetSell": 64.08
   },
   {
     "ticker": "PSX",
-    "targetBuy": 115.24,
+    "targetBuy": 150.18,
     "targetSell": 181.08
   },
   {
     "ticker": "CEG",
-    "targetBuy": 255.47,
+    "targetBuy": 250.6,
     "targetSell": 392.07
   },
   {
     "ticker": "VST",
-    "targetBuy": 140.56,
+    "targetBuy": 137.89,
     "targetSell": 208.83
   },
   {
     "ticker": "FSLR",
-    "targetBuy": 142.28,
+    "targetBuy": 210.75,
     "targetSell": 271.69
   },
   {
     "ticker": "USO",
-    "targetBuy": 69.26,
+    "targetBuy": 110.02,
     "targetSell": 146.38
   },
   {
     "ticker": "XLE",
-    "targetBuy": 42.38,
+    "targetBuy": 51.91,
     "targetSell": 60.29
   },
   {
     "ticker": "BA",
-    "targetBuy": 185.61,
+    "targetBuy": 215.56,
     "targetSell": 241.63
   },
   {
     "ticker": "CAT",
-    "targetBuy": 353.05,
+    "targetBuy": 633.8,
     "targetSell": 884.78
   },
   {
     "ticker": "GE",
-    "targetBuy": 239.41,
+    "targetBuy": 288.25,
     "targetSell": 331.06
   },
   {
     "ticker": "HON",
-    "targetBuy": 196.1,
+    "targetBuy": 217.47,
     "targetSell": 235.77
   },
   {
     "ticker": "DE",
-    "targetBuy": 454.65,
+    "targetBuy": 553.6,
     "targetSell": 640.48
   },
   {
     "ticker": "MMM",
-    "targetBuy": 146.31,
+    "targetBuy": 158.38,
     "targetSell": 168.54
   },
   {
     "ticker": "LMT",
-    "targetBuy": 430.62,
+    "targetBuy": 551.06,
     "targetSell": 657.4
   },
   {
     "ticker": "RTX",
-    "targetBuy": 137.45,
+    "targetBuy": 172.7,
     "targetSell": 203.77
   },
   {
     "ticker": "UNP",
-    "targetBuy": 221.38,
+    "targetBuy": 243.56,
     "targetSell": 262.47
   },
   {
     "ticker": "FDX",
-    "targetBuy": 225.07,
+    "targetBuy": 309.19,
     "targetSell": 383.83
   },
   {
     "ticker": "UPS",
-    "targetBuy": 86.1,
+    "targetBuy": 102.21,
     "targetSell": 116.29
   },
   {
     "ticker": "DAL",
-    "targetBuy": 47.54,
+    "targetBuy": 60.84,
     "targetSell": 72.57
   },
   {
     "ticker": "AAL",
-    "targetBuy": 10.59,
+    "targetBuy": 13.3,
     "targetSell": 15.68
   },
   {
     "ticker": "UAL",
-    "targetBuy": 75.13,
+    "targetBuy": 95.38,
     "targetSell": 113.25
   },
   {
     "ticker": "PCAR",
-    "targetBuy": 94.55,
+    "targetBuy": 110.97,
     "targetSell": 125.29
   },
   {
     "ticker": "ITA",
-    "targetBuy": 176.86,
+    "targetBuy": 209.55,
     "targetSell": 238.12
   },
   {
     "ticker": "XLI",
-    "targetBuy": 146.61,
+    "targetBuy": 159.47,
     "targetSell": 170.34
   },
   {
     "ticker": "RIO",
-    "targetBuy": 58.42,
+    "targetBuy": 84.11,
     "targetSell": 106.95
   },
   {
     "ticker": "BHP",
-    "targetBuy": 48.03,
+    "targetBuy": 68.6,
     "targetSell": 86.88
   },
   {
     "ticker": "FCX",
-    "targetBuy": 36.91,
+    "targetBuy": 53.06,
     "targetSell": 67.42
   },
   {
     "ticker": "NEM",
-    "targetBuy": 52.5,
+    "targetBuy": 92.44,
     "targetSell": 128.14
   },
   {
     "ticker": "AEM",
-    "targetBuy": 112.54,
+    "targetBuy": 181.21,
     "targetSell": 242.48
   },
   {
     "ticker": "GFI",
-    "targetBuy": 21.95,
+    "targetBuy": 41.27,
     "targetSell": 58.56
   },
   {
     "ticker": "KGC",
-    "targetBuy": 14.34,
+    "targetBuy": 26.39,
     "targetSell": 37.15
   },
   {
     "ticker": "PAAS",
-    "targetBuy": 23.82,
+    "targetBuy": 46.34,
     "targetSell": 66.49
   },
   {
     "ticker": "GOLD",
-    "targetBuy": 20.36,
+    "targetBuy": 43.05,
     "targetSell": 63.37
   },
   {
     "ticker": "MOS",
-    "targetBuy": 22.17,
+    "targetBuy": 21.74,
     "targetSell": 36.32
   },
   {
     "ticker": "DOW",
-    "targetBuy": 21.42,
+    "targetBuy": 31.57,
     "targetSell": 40.6
   },
   {
     "ticker": "NUE",
-    "targetBuy": 111.52,
+    "targetBuy": 170.83,
     "targetSell": 223.68
   },
   {
     "ticker": "IFF",
-    "targetBuy": 62.1,
+    "targetBuy": 71.8,
     "targetSell": 80.23
   },
   {
     "ticker": "ECL",
-    "targetBuy": 257.51,
+    "targetBuy": 252.61,
     "targetSell": 293.81
   },
   {
     "ticker": "IP",
-    "targetBuy": 30.92,
+    "targetBuy": 30.33,
     "targetSell": 53.32
   },
   {
     "ticker": "SCCO",
-    "targetBuy": 89.89,
+    "targetBuy": 153.64,
     "targetSell": 210.59
   },
   {
     "ticker": "GT",
-    "targetBuy": 5.83,
+    "targetBuy": 5.72,
     "targetSell": 11.43
   },
   {
     "ticker": "PHG",
-    "targetBuy": 23.05,
+    "targetBuy": 27.7,
     "targetSell": 31.77
   },
   {
     "ticker": "GDX",
-    "targetBuy": 48.98,
+    "targetBuy": 81.92,
     "targetSell": 111.32
   },
   {
     "ticker": "URA",
-    "targetBuy": 28.62,
+    "targetBuy": 44.77,
     "targetSell": 59.17
   },
   {
     "ticker": "COPX",
-    "targetBuy": 41.12,
+    "targetBuy": 69.57,
     "targetSell": 94.99
   },
   {
     "ticker": "GLD",
-    "targetBuy": 311.3,
+    "targetBuy": 403.09,
     "targetSell": 484.22
   },
   {
     "ticker": "SLV",
-    "targetBuy": 30.78,
+    "targetBuy": 69.57,
     "targetSell": 104.34
   },
   {
     "ticker": "XLB",
-    "targetBuy": 44.14,
+    "targetBuy": 48.09,
     "targetSell": 51.43
   },
   {
     "ticker": "COIN",
-    "targetBuy": 146.33,
+    "targetBuy": 143.54,
     "targetSell": 422.42
   },
   {
     "ticker": "MSTR",
-    "targetBuy": 109.38,
+    "targetBuy": 107.3,
     "targetSell": 434.36
   },
   {
     "ticker": "HOOD",
-    "targetBuy": 62.66,
+    "targetBuy": 61.47,
     "targetSell": 146.17
   },
   {
     "ticker": "RIOT",
-    "targetBuy": 8.33,
+    "targetBuy": 16.9,
     "targetSell": 24.57
   },
   {
     "ticker": "BITF",
-    "targetBuy": 0.74,
+    "targetBuy": 3.65,
     "targetSell": 6.27
   },
   {
     "ticker": "HUT",
-    "targetBuy": 15.48,
+    "targetBuy": 63.5,
     "targetSell": 106.65
   },
   {
     "ticker": "IREN",
-    "targetBuy": 8.52,
+    "targetBuy": 42.49,
     "targetSell": 73.03
   },
   {
     "ticker": "IBIT",
-    "targetBuy": 37.07,
+    "targetBuy": 53.56,
     "targetSell": 68.23
   },
   {
     "ticker": "ETHA",
-    "targetBuy": 14.3,
+    "targetBuy": 14.03,
     "targetSell": 34.96
   },
   {
     "ticker": "MELI",
-    "targetBuy": 1569.75,
+    "targetBuy": 1539.85,
     "targetSell": 2512.96
   },
   {
     "ticker": "GLOB",
-    "targetBuy": 34.13,
+    "targetBuy": 33.48,
     "targetSell": 101.76
   },
   {
     "ticker": "ARCO",
-    "targetBuy": 6.84,
+    "targetBuy": 8.13,
     "targetSell": 9.26
   },
   {
@@ -1136,92 +1136,92 @@
   },
   {
     "ticker": "CAAP",
-    "targetBuy": 18.23,
+    "targetBuy": 23.93,
     "targetSell": 28.98
   },
   {
     "ticker": "VIST",
-    "targetBuy": 33.21,
+    "targetBuy": 55.42,
     "targetSell": 75.24
   },
   {
     "ticker": "GPRK",
-    "targetBuy": 6.04,
+    "targetBuy": 8.07,
     "targetSell": 9.87
   },
   {
     "ticker": "AGRO",
-    "targetBuy": 7.23,
+    "targetBuy": 11.39,
     "targetSell": 15.1
   },
   {
     "ticker": "BG",
-    "targetBuy": 75.18,
+    "targetBuy": 102.77,
     "targetSell": 127.23
   },
   {
     "ticker": "NU",
-    "targetBuy": 12.3,
+    "targetBuy": 12.06,
     "targetSell": 18.03
   },
   {
     "ticker": "XP",
-    "targetBuy": 16.39,
+    "targetBuy": 19.37,
     "targetSell": 21.97
   },
   {
     "ticker": "STNE",
-    "targetBuy": 9.92,
+    "targetBuy": 9.73,
     "targetSell": 18.95
   },
   {
     "ticker": "PAGS",
-    "targetBuy": 8.12,
+    "targetBuy": 10.03,
     "targetSell": 11.7
   },
   {
     "ticker": "ITUB",
-    "targetBuy": 6.23,
+    "targetBuy": 7.77,
     "targetSell": 9.12
   },
   {
     "ticker": "BBD",
-    "targetBuy": 2.79,
+    "targetBuy": 3.48,
     "targetSell": 4.09
   },
   {
     "ticker": "BSBR",
-    "targetBuy": 4.85,
+    "targetBuy": 5.97,
     "targetSell": 6.95
   },
   {
     "ticker": "ABEV",
-    "targetBuy": 2.21,
+    "targetBuy": 2.78,
     "targetSell": 3.28
   },
   {
     "ticker": "VALE",
-    "targetBuy": 9.42,
+    "targetBuy": 13.46,
     "targetSell": 17.04
   },
   {
     "ticker": "PBR",
-    "targetBuy": 11.59,
+    "targetBuy": 16.64,
     "targetSell": 21.13
   },
   {
     "ticker": "SID",
-    "targetBuy": 1.17,
+    "targetBuy": 1.14,
     "targetSell": 2.09
   },
   {
     "ticker": "GGB",
-    "targetBuy": 2.74,
+    "targetBuy": 3.8,
     "targetSell": 4.73
   },
   {
     "ticker": "SBS",
-    "targetBuy": 3.96,
+    "targetBuy": 5.47,
     "targetSell": 6.8
   },
   {
@@ -1231,117 +1231,117 @@
   },
   {
     "ticker": "SUZ",
-    "targetBuy": 8.6,
+    "targetBuy": 8.44,
     "targetSell": 10.96
   },
   {
     "ticker": "BAK",
-    "targetBuy": 2.44,
+    "targetBuy": 3.86,
     "targetSell": 5.13
   },
   {
     "ticker": "AMX",
-    "targetBuy": 17.43,
+    "targetBuy": 22.2,
     "targetSell": 26.41
   },
   {
     "ticker": "CX",
-    "targetBuy": 6.96,
+    "targetBuy": 10.15,
     "targetSell": 12.99
   },
   {
     "ticker": "FMX",
-    "targetBuy": 87.23,
+    "targetBuy": 104.4,
     "targetSell": 119.42
   },
   {
     "ticker": "KOF",
-    "targetBuy": 84.23,
+    "targetBuy": 98.29,
     "targetSell": 110.54
   },
   {
     "ticker": "ASR",
-    "targetBuy": 306.97,
+    "targetBuy": 301.12,
     "targetSell": 362.44
   },
   {
     "ticker": "BABA",
-    "targetBuy": 108.9,
+    "targetBuy": 148.19,
     "targetSell": 183.04
   },
   {
     "ticker": "JD",
-    "targetBuy": 25.73,
+    "targetBuy": 30.68,
     "targetSell": 35.02
   },
   {
     "ticker": "PDD",
-    "targetBuy": 98.5,
+    "targetBuy": 96.62,
     "targetSell": 132.44
   },
   {
     "ticker": "EWZ",
-    "targetBuy": 27.62,
+    "targetBuy": 34.16,
     "targetSell": 39.92
   },
   {
     "ticker": "ILF",
-    "targetBuy": 25.91,
+    "targetBuy": 31.59,
     "targetSell": 36.57
   },
   {
     "ticker": "FXI",
-    "targetBuy": 36.51,
+    "targetBuy": 35.81,
     "targetSell": 39.9
   },
   {
     "ticker": "IVV",
-    "targetBuy": 607.23,
+    "targetBuy": 665.67,
     "targetSell": 715.37
   },
   {
     "ticker": "TQQQ",
-    "targetBuy": 34.05,
+    "targetBuy": 56.06,
     "targetSell": 75.7
   },
   {
     "ticker": "PSQ",
-    "targetBuy": 27.11,
+    "targetBuy": 26.59,
     "targetSell": 35.14
   },
   {
     "ticker": "IWM",
-    "targetBuy": 209.63,
+    "targetBuy": 243.62,
     "targetSell": 273.2
   },
   {
     "ticker": "DIA",
-    "targetBuy": 434.52,
+    "targetBuy": 459.57,
     "targetSell": 480.04
   },
   {
     "ticker": "ARKK",
-    "targetBuy": 57.77,
+    "targetBuy": 73.84,
     "targetSell": 88.02
   },
   {
     "ticker": "EEM",
-    "targetBuy": 47.49,
+    "targetBuy": 56.69,
     "targetSell": 64.74
   },
   {
     "ticker": "EFA",
-    "targetBuy": 89.96,
+    "targetBuy": 95.81,
     "targetSell": 100.64
   },
   {
     "ticker": "VEA",
-    "targetBuy": 57.14,
+    "targetBuy": 62.77,
     "targetSell": 67.56
   },
   {
     "ticker": "ACWI",
-    "targetBuy": 127.31,
+    "targetBuy": 139.12,
     "targetSell": 149.13
   },
   {
@@ -1351,412 +1351,412 @@
   },
   {
     "ticker": "VXX",
-    "targetBuy": 26.92,
+    "targetBuy": 26.4,
     "targetSell": 56.39
   },
   {
     "ticker": "SPXL",
-    "targetBuy": 148.45,
+    "targetBuy": 209.91,
     "targetSell": 264.52
   },
   {
     "ticker": "SH",
-    "targetBuy": 34.73,
+    "targetBuy": 34.07,
     "targetSell": 40.75
   },
   {
     "ticker": "EWJ",
-    "targetBuy": 74.64,
+    "targetBuy": 82.69,
     "targetSell": 89.57
   },
   {
     "ticker": "VIG",
-    "targetBuy": 202.66,
+    "targetBuy": 212.17,
     "targetSell": 219.75
   },
   {
     "ticker": "SPYD",
-    "targetBuy": 43.51,
+    "targetBuy": 44.98,
     "targetSell": 46.1
   },
   {
     "ticker": "SPHQ",
-    "targetBuy": 72.11,
+    "targetBuy": 76.03,
     "targetSell": 79.2
   },
   {
     "ticker": "IVE",
-    "targetBuy": 194.61,
+    "targetBuy": 205.62,
     "targetSell": 214.61
   },
   {
     "ticker": "IVW",
-    "targetBuy": 105.8,
+    "targetBuy": 119.93,
     "targetSell": 132.14
   },
   {
     "ticker": "CIBR",
-    "targetBuy": 63.07,
+    "targetBuy": 70.53,
     "targetSell": 76.93
   },
   {
     "ticker": "XLK",
-    "targetBuy": 118.18,
+    "targetBuy": 146.39,
     "targetSell": 171.21
   },
   {
     "ticker": "XLU",
-    "targetBuy": 41.56,
+    "targetBuy": 43.69,
     "targetSell": 45.41
   },
   {
     "ticker": "XLRE",
-    "targetBuy": 41.71,
+    "targetBuy": 42.32,
     "targetSell": 42.66
   },
   {
     "ticker": "GGAL",
-    "targetBuy": 27.18,
+    "targetBuy": 45.69,
     "targetSell": 62.21
   },
   {
     "ticker": "YPF",
-    "targetBuy": 23.96,
+    "targetBuy": 35.89,
     "targetSell": 46.51
   },
   {
     "ticker": "PAM",
-    "targetBuy": 57.7,
+    "targetBuy": 74.72,
     "targetSell": 89.78
   },
   {
     "ticker": "BBAR",
-    "targetBuy": 8.15,
+    "targetBuy": 15.43,
     "targetSell": 21.95
   },
   {
     "ticker": "BMA",
-    "targetBuy": 40.21,
+    "targetBuy": 72.22,
     "targetSell": 100.84
   },
   {
     "ticker": "TGSU2.BA",
-    "targetBuy": 6195,
+    "targetBuy": 8300,
     "targetSell": 10165
   },
   {
     "ticker": "TGNO4.BA",
-    "targetBuy": 2084.25,
+    "targetBuy": 3610,
     "targetSell": 4973.25
   },
   {
     "ticker": "TXAR.BA",
-    "targetBuy": 472.5,
+    "targetBuy": 700,
     "targetSell": 902.5
   },
   {
     "ticker": "ALUA.BA",
-    "targetBuy": 611.1,
+    "targetBuy": 876,
     "targetSell": 1111.5
   },
   {
     "ticker": "CEPU",
-    "targetBuy": 7.8,
+    "targetBuy": 12.97,
     "targetSell": 17.58
   },
   {
     "ticker": "EDN",
-    "targetBuy": 15.1,
+    "targetBuy": 26.24,
     "targetSell": 36.2
   },
   {
     "ticker": "LOMA",
-    "targetBuy": 7.39,
+    "targetBuy": 10.61,
     "targetSell": 13.46
   },
   {
     "ticker": "SUPV",
-    "targetBuy": 4.77,
+    "targetBuy": 10.72,
     "targetSell": 16.05
   },
   {
     "ticker": "TEO",
-    "targetBuy": 6.75,
+    "targetBuy": 10.12,
     "targetSell": 13.12
   },
   {
     "ticker": "COME.BA",
-    "targetBuy": 30.56,
+    "targetBuy": 57.05,
     "targetSell": 80.75
   },
   {
     "ticker": "CRESY",
-    "targetBuy": 8.59,
+    "targetBuy": 11.2,
     "targetSell": 13.5
   },
   {
     "ticker": "IRS",
-    "targetBuy": 11.41,
+    "targetBuy": 15.01,
     "targetSell": 18.18
   },
   {
     "ticker": "TRAN.BA",
-    "targetBuy": 1513.05,
+    "targetBuy": 2925.5,
     "targetSell": 4189.5
   },
   {
     "ticker": "BYMA.BA",
-    "targetBuy": 149.1,
+    "targetBuy": 246.88,
     "targetSell": 334.16
   },
   {
     "ticker": "METR.BA",
-    "targetBuy": 1050,
+    "targetBuy": 1945,
     "targetSell": 2745.5
   },
   {
     "ticker": "BHIP.BA",
-    "targetBuy": 189,
+    "targetBuy": 392.5,
     "targetSell": 574.75
   },
   {
     "ticker": "BPAT.BA",
-    "targetBuy": 1186.5,
+    "targetBuy": 2115,
     "targetSell": 2945
   },
   {
     "ticker": "VALO.BA",
-    "targetBuy": 242.55,
+    "targetBuy": 490.5,
     "targetSell": 712.5
   },
   {
     "ticker": "CVH.BA",
-    "targetBuy": 4147.5,
+    "targetBuy": 6415,
     "targetSell": 8436
   },
   {
     "ticker": "CAPX.BA",
-    "targetBuy": 3150,
+    "targetBuy": 4960,
     "targetSell": 6574
   },
   {
     "ticker": "CECO2.BA",
-    "targetBuy": 262.5,
+    "targetBuy": 397.5,
     "targetSell": 517.75
   },
   {
     "ticker": "CELU.BA",
-    "targetBuy": 157.5,
+    "targetBuy": 339.5,
     "targetSell": 502.55
   },
   {
     "ticker": "CGPA2.BA",
-    "targetBuy": 1317.75,
+    "targetBuy": 2372.5,
     "targetSell": 3315.5
   },
   {
     "ticker": "CTIO.BA",
-    "targetBuy": 1438.5,
+    "targetBuy": 1985,
     "targetSell": 2470
   },
   {
     "ticker": "DGCU2.BA",
-    "targetBuy": 1008,
+    "targetBuy": 1595,
     "targetSell": 2118.5
   },
   {
     "ticker": "DGCE.BA",
-    "targetBuy": 1181.25,
+    "targetBuy": 1895,
     "targetSell": 2531.75
   },
   {
     "ticker": "ECOG.BA",
-    "targetBuy": 1454.25,
+    "targetBuy": 1426.55,
     "targetSell": 30637.5
   },
   {
     "ticker": "FERR.BA",
-    "targetBuy": 15.33,
+    "targetBuy": 15.04,
     "targetSell": 46.55
   },
   {
     "ticker": "GAMI.BA",
-    "targetBuy": 16.28,
+    "targetBuy": 149.75,
     "targetSell": 269.8
   },
   {
     "ticker": "GARO.BA",
-    "targetBuy": 112.35,
+    "targetBuy": 211,
     "targetSell": 299.25
   },
   {
     "ticker": "GCDI.BA",
-    "targetBuy": 13.13,
+    "targetBuy": 12.88,
     "targetSell": 25.84
   },
   {
     "ticker": "GCLA.BA",
-    "targetBuy": 1732.5,
+    "targetBuy": 2875,
     "targetSell": 3895
   },
   {
     "ticker": "GRIM.BA",
-    "targetBuy": 1375.5,
+    "targetBuy": 2152.5,
     "targetSell": 2845.25
   },
   {
     "ticker": "HARG.BA",
-    "targetBuy": 981.75,
+    "targetBuy": 1892.5,
     "targetSell": 2707.5
   },
   {
     "ticker": "HAVA.BA",
-    "targetBuy": 4000.5,
+    "targetBuy": 5350,
     "targetSell": 6545.5
   },
   {
     "ticker": "IEB.BA",
-    "targetBuy": 615.3,
+    "targetBuy": 810.5,
     "targetSell": 983.25
   },
   {
     "ticker": "INVJ.BA",
-    "targetBuy": 236.25,
+    "targetBuy": 501.5,
     "targetSell": 739.1
   },
   {
     "ticker": "LEDE.BA",
-    "targetBuy": 694.05,
+    "targetBuy": 680.83,
     "targetSell": 1159
   },
   {
     "ticker": "LONG.BA",
-    "targetBuy": 16.8,
+    "targetBuy": 16.48,
     "targetSell": 30.5
   },
   {
     "ticker": "MIRG.BA",
-    "targetBuy": 15330,
+    "targetBuy": 15038,
     "targetSell": 26837.5
   },
   {
     "ticker": "MOLA.BA",
-    "targetBuy": 17036.25,
+    "targetBuy": 23087.5,
     "targetSell": 28452.5
   },
   {
     "ticker": "MOLI.BA",
-    "targetBuy": 2152.5,
+    "targetBuy": 3262.5,
     "targetSell": 4251.25
   },
   {
     "ticker": "MORI.BA",
-    "targetBuy": 25.25,
+    "targetBuy": 24.77,
     "targetSell": 52.25
   },
   {
     "ticker": "OEST.BA",
-    "targetBuy": 435.75,
+    "targetBuy": 755,
     "targetSell": 1040.25
   },
   {
     "ticker": "POLL.BA",
-    "targetBuy": 220.5,
+    "targetBuy": 275,
     "targetSell": 323
   },
   {
     "ticker": "RAGH.BA",
-    "targetBuy": 1323,
+    "targetBuy": 1530,
     "targetSell": 1710
   },
   {
     "ticker": "RICH.BA",
-    "targetBuy": 1002.75,
+    "targetBuy": 1585,
     "targetSell": 2104.25
   },
   {
     "ticker": "RIGO.BA",
-    "targetBuy": 459.9,
+    "targetBuy": 451.14,
     "targetSell": 1121
   },
   {
     "ticker": "SAMI.BA",
-    "targetBuy": 361.73,
+    "targetBuy": 354.84,
     "targetSell": 912
   },
   {
     "ticker": "SEMI.BA",
-    "targetBuy": 11.67,
+    "targetBuy": 22.06,
     "targetSell": 31.35
   },
   {
     "ticker": "AGRO.BA",
-    "targetBuy": 27.3,
+    "targetBuy": 48.5,
     "targetSell": 67.45
   },
   {
     "ticker": "AUSO.BA",
-    "targetBuy": 1727.25,
+    "targetBuy": 3022.5,
     "targetSell": 4180
   },
   {
     "ticker": "PATA.BA",
-    "targetBuy": 945,
+    "targetBuy": 1420,
     "targetSell": 1843
   },
   {
     "ticker": "BTC-USD",
-    "targetBuy": 63077.91,
+    "targetBuy": 93136.14,
     "targetSell": 119888.17
   },
   {
     "ticker": "ETH-USD",
-    "targetBuy": 1836.06,
+    "targetBuy": 1801.09,
     "targetSell": 4706.05
   },
   {
     "ticker": "BNB-USD",
-    "targetBuy": 599.22,
+    "targetBuy": 587.8,
     "targetSell": 1302.02
   },
   {
     "ticker": "SOL-USD",
-    "targetBuy": 72.13,
+    "targetBuy": 70.75,
     "targetSell": 240.55
   },
   {
     "ticker": "XRP-USD",
-    "targetBuy": 1.19,
+    "targetBuy": 1.17,
     "targetSell": 3.47
   },
   {
     "ticker": "ADA-USD",
-    "targetBuy": 0.24,
+    "targetBuy": 0.23,
     "targetSell": 0.97
   },
   {
     "ticker": "DOGE-USD",
-    "targetBuy": 0.09,
+    "targetBuy": 0.08,
     "targetSell": 0.29
   },
   {
     "ticker": "AVAX-USD",
-    "targetBuy": 8.09,
+    "targetBuy": 7.93,
     "targetSell": 34.11
   },
   {
     "ticker": "LINK-USD",
-    "targetBuy": 7.69,
+    "targetBuy": 7.54,
     "targetSell": 26.35
   },
   {
     "ticker": "DOT-USD",
-    "targetBuy": 1.19,
+    "targetBuy": 1.16,
     "targetSell": 4.86
   },
   {
     "ticker": "MATIC-USD",
-    "targetBuy": 0.21,
+    "targetBuy": 0.2,
     "targetSell": 1.03
   },
   {
@@ -1766,37 +1766,37 @@
   },
   {
     "ticker": "LTC-USD",
-    "targetBuy": 48.39,
+    "targetBuy": 47.47,
     "targetSell": 128.78
   },
   {
     "ticker": "BCH-USD",
-    "targetBuy": 371.51,
+    "targetBuy": 364.44,
     "targetSell": 634.66
   },
   {
     "ticker": "ATOM-USD",
-    "targetBuy": 1.69,
+    "targetBuy": 1.66,
     "targetSell": 5.07
   },
   {
     "ticker": "NEAR-USD",
-    "targetBuy": 0.91,
+    "targetBuy": 2.1,
     "targetSell": 3.17
   },
   {
     "ticker": "SUI20947-USD",
-    "targetBuy": 0.85,
+    "targetBuy": 0.83,
     "targetSell": 4.21
   },
   {
     "ticker": "APT21794-USD",
-    "targetBuy": 0.83,
+    "targetBuy": 0.82,
     "targetSell": 5.69
   },
   {
     "ticker": "TRX-USD",
-    "targetBuy": 0.27,
+    "targetBuy": 0.31,
     "targetSell": 0.35
   },
   {

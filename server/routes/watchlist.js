@@ -25,10 +25,21 @@ function computeSignal(price, targetBuy, targetSell) {
   return 'HOLD';
 }
 
-function autoCalculateTargets(weekLow52, weekHigh52) {
+// Híbrido: si el precio está cerca del 52W low (<20% del rango), usa target ajustado
+// (low * 1.03) para evitar falsos "BARATA". Para el resto usa el midpoint del rango,
+// que es la fórmula que coincide con la mayoría de los valores de referencia.
+function autoCalculateTargets(weekLow52, weekHigh52, price) {
   if (!weekLow52 || !weekHigh52) return null;
-  const targetBuy  = Math.round((weekLow52  * 1.05) * 100) / 100;
+  const range = weekHigh52 - weekLow52;
+  if (range <= 0) return null;
+
+  const pos = price != null ? (price - weekLow52) / range : 0.5;
+  const targetBuy = pos < 0.20
+    ? Math.round((weekLow52 * 1.03) * 100) / 100
+    : Math.round(((weekLow52 + weekHigh52) / 2) * 100) / 100;
+
   const targetSell = Math.round((weekHigh52 * 0.95) * 100) / 100;
+
   if (targetSell <= targetBuy) return null;
   return { targetBuy, targetSell };
 }
@@ -121,7 +132,7 @@ router.get('/preview/:ticker', async (req, res) => {
   const upper = req.params.ticker.toUpperCase();
   try {
     const data = await fetchTickerData(upper);
-    res.json({ ...data, autoTargets: autoCalculateTargets(data.weekLow52, data.weekHigh52) });
+    res.json({ ...data, autoTargets: autoCalculateTargets(data.weekLow52, data.weekHigh52, data.price) });
   } catch (e) {
     res.status(400).json({ error: e.message });
   }
@@ -135,7 +146,7 @@ router.post('/auto-targets/all', async (_req, res) => {
   let updated = 0, failed = 0;
   results.forEach((r, i) => {
     if (r.status === 'fulfilled') {
-      const auto = autoCalculateTargets(r.value.weekLow52, r.value.weekHigh52);
+      const auto = autoCalculateTargets(r.value.weekLow52, r.value.weekHigh52, r.value.price);
       if (auto) { list[i].targetBuy = auto.targetBuy; list[i].targetSell = auto.targetSell; updated++; }
       else failed++;
     } else { failed++; }
@@ -158,7 +169,7 @@ router.post('/:ticker/auto-targets', async (req, res) => {
   if (!item) return res.status(404).json({ error: 'Not found' });
   try {
     const data = await fetchTickerData(upper);
-    const auto = autoCalculateTargets(data.weekLow52, data.weekHigh52);
+    const auto = autoCalculateTargets(data.weekLow52, data.weekHigh52, data.price);
     if (!auto) return res.status(400).json({ error: 'No se pudieron calcular targets' });
     item.targetBuy = auto.targetBuy;
     item.targetSell = auto.targetSell;
