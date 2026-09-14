@@ -1,34 +1,37 @@
-export function formatPrice(n) {
-  if (n == null) return '--';
-  return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+// Formato numérico de la planilla (es-AR): coma decimal, sin separador de miles.
+//   "714,88" · "109,3" · "2954,7725" · "50,8" · "-0,93%"
+
+const cache = new Map();
+function nf(min, max) {
+  const key = `${min}/${max}`;
+  if (!cache.has(key)) {
+    cache.set(key, new Intl.NumberFormat('es-AR', { minimumFractionDigits: min, maximumFractionDigits: max, useGrouping: false }));
+  }
+  return cache.get(key);
 }
 
-export function formatPercent(n) {
-  if (n == null) return '--';
-  const sign = n >= 0 ? '+' : '';
-  return sign + n.toFixed(2) + '%';
+/** Formato "automático" de Sheets: hasta `max` decimales, sin ceros a la derecha. Valores < 1 (cripto chica) muestran todas sus cifras. */
+export function fmtAuto(n, max = 2) {
+  if (n == null || !Number.isFinite(n)) return '--';
+  return nf(0, Math.abs(n) < 1 ? 10 : max).format(n);
 }
 
-export function formatVolume(n) {
-  if (n == null) return '--';
-  if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
-  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
-  if (n >= 1e3) return (n / 1e3).toFixed(0) + 'K';
-  return n.toString();
+export function fmtFixed(n, decimals) {
+  if (n == null || !Number.isFinite(n)) return '--';
+  return nf(decimals, decimals).format(n);
 }
 
-export function formatDate(s) {
-  if (!s) return '--';
-  const d = new Date(s + 'T00:00:00');
-  return d.toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+export function fmtPct(n) {
+  if (n == null || !Number.isFinite(n)) return '--';
+  return nf(2, 2).format(n) + '%';
 }
 
-export function formatRSI(n) {
-  if (n == null) return '--';
-  return n.toFixed(1);
-}
+export const fmtPrice = (n) => fmtAuto(n, 2);
+export const fmtTarget = (n) => fmtAuto(n, 4);
+export const fmtRsi = (n) => fmtFixed(n, 1);
+export const fmtInt = (n) => fmtFixed(n, 0);
 
-export function formatBeta(n) {
-  if (n == null) return '--';
-  return n.toFixed(2);
+export function fmtTime(ts) {
+  if (!ts) return '--:--:--';
+  return new Date(ts).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 }

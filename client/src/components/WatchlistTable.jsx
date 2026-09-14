@@ -1,131 +1,121 @@
+import { useMemo } from 'react';
+import { BarChart2 } from 'lucide-react';
 import SortHeader from './SortHeader.jsx';
 import TableRow from './TableRow.jsx';
 import { useSort } from '../hooks/useSort.js';
-import { BarChart2 } from 'lucide-react';
+import { sectorRank } from '../utils/signals.js';
 
-const COLUMNS = [
-  { key: 'ticker',     label: 'TICKER',      align: 'left'   },
-  { key: 'signal',     label: 'SEÑAL',       align: 'center' },
-  { key: 'price',      label: 'PRECIO',      align: 'right'  },
-  { key: 'rsi',        label: 'RSI',         align: 'right'  },
-  { key: 'change24h',  label: '%24H',        align: 'right'  },
-  { key: 'change360d', label: '360D',        align: 'right'  },
-  { key: 'weekLow52',  label: '52W LOW',     align: 'right'  },
-  { key: 'weekHigh52', label: '52W HIGH',    align: 'right'  },
-  { key: 'targetBuy',  label: 'TARGET BUY',  align: 'right'  },
-  { key: 'targetSell', label: 'TARGET SELL', align: 'right'  },
-  { key: 'mediaSenal', label: 'MEDIA',       align: 'right'  },
-  { key: 'beta',       label: 'BETA 5Y',     align: 'right'  },
-  { key: 'volume',     label: 'VOLUMEN',     align: 'right'  },
-  { key: 'exDate',     label: 'EX DATE',     align: 'center' },
-  { key: 'fechaPago',  label: 'PAGO',        align: 'center' },
-  { key: '_del',       label: '',            align: 'center', noSort: true },
+// Mismas columnas (y mismos nombres) que la planilla Luna Signal
+export const COLUMNS = [
+  { key: 'ticker',     label: 'TICKER',     width: 96,  title: 'Símbolo' },
+  { key: 'signal',     label: 'SEÑAL',      width: 130, title: 'Señal según convicción' },
+  { key: 'price',      label: 'PRECIO',     width: 92,  title: 'Último precio' },
+  { key: 'rsi',        label: 'RSI',        width: 64,  title: 'RSI de Wilder, 14 ruedas' },
+  { key: 'change24h',  label: '%24HS',      width: 84,  title: 'Variación contra el cierre anterior' },
+  { key: 'change30',   label: '30',         width: 84,  title: 'Variación contra el cierre de 30 días hábiles atrás' },
+  { key: 'weekLow52',  label: 'WEEK LOW',   width: 96,  title: 'Mínimo de 52 semanas' },
+  { key: 'weekHigh52', label: 'WEEK HIGH',  width: 96,  title: 'Máximo de 52 semanas' },
+  { key: 'buy',        label: 'BUY',        width: 100, title: 'WEEK LOW + 50% del rango' },
+  { key: 'sell',       label: 'SELL',       width: 100, title: 'WEEK LOW + 85% del rango' },
+  { key: 'conviction', label: 'CONVICCION', width: 106, title: 'Convicción de compra (15 a 85) según la posición del precio en el rango 52W' },
+  { key: 'change1y',   label: 'Anual',      width: 84,  title: 'Variación en 12 meses' },
+  { key: 'change5y',   label: '5 Años',     width: 84,  title: 'Variación en 5 años' },
 ];
 
-function SkeletonRow({ index }) {
-  return (
-    <tr style={{ borderColor: 'var(--border-subtle)', borderBottomWidth: 1 }}>
-      {COLUMNS.map((col) => (
-        <td key={col.key} className="px-3 py-3.5">
-          <div
-            className="skeleton rounded"
-            style={{
-              height: 12,
-              width: col.key === 'ticker' ? 60 : col.key === 'signal' ? 70 : col.key === '_del' ? 24 : '80%',
-              marginLeft: col.align === 'right' ? 'auto' : col.align === 'center' ? 'auto' : 0,
-              marginRight: col.align === 'center' ? 'auto' : 0,
-            }}
-          />
-        </td>
-      ))}
-    </tr>
-  );
+function matches(row, { signal, sector, query }) {
+  if (signal && row.signal !== signal) return false;
+  if (sector && row.sector !== sector) return false;
+  if (query) {
+    const q = query.toUpperCase();
+    return row.ticker.toUpperCase().startsWith(q) || row.symbol.toUpperCase().startsWith(q) || (row.nombre ?? '').toUpperCase().includes(q);
+  }
+  return true;
 }
 
-export default function WatchlistTable({ rows, loading, onUpdate, onRemove, onAutoTargets, filterSignal, filterSector, searchQuery }) {
-  const { sortKey, sortDir, handleSort, sortedRows } = useSort(rows);
-
-  const filtered = sortedRows
-    .filter((r) => !filterSignal || r.signal === filterSignal)
-    .filter((r) => !filterSector || r.sector === filterSector)
-    .filter((r) => !searchQuery || r.ticker.toUpperCase().startsWith(searchQuery.toUpperCase()));
-
-  if (loading) {
-    return (
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse">
-          <thead>
-            <tr style={{ background: 'var(--bg-surface)', borderBottomWidth: 1, borderColor: 'var(--border-default)' }}>
-              {COLUMNS.map((col) => (
-                <th key={col.key} className="px-3 py-3 text-[11px] font-semibold uppercase tracking-widest text-gray-600">
-                  {col.label}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {[...Array(7)].map((_, i) => <SkeletonRow key={i} index={i} />)}
-          </tbody>
-        </table>
-      </div>
-    );
+/** Agrupa por sector respetando el orden de la lista; ordena dentro de cada sección si hay columna elegida. */
+function groupRows(rows, compare) {
+  const groups = new Map();
+  for (const row of rows) {
+    const key = row.sector ?? 'Otros';
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(row);
   }
+  return [...groups.entries()]
+    .sort(([a], [b]) => sectorRank(a) - sectorRank(b))
+    .map(([sector, items]) => ({ sector, rows: compare ? [...items].sort(compare) : items }));
+}
 
-  if (rows.length === 0) {
+function SkeletonRows() {
+  return [...Array(12)].map((_, i) => (
+    <tr key={i} className="row">
+      {COLUMNS.map((c) => (
+        <td key={c.key}><span className="skeleton" style={{ width: c.key === 'signal' ? 90 : '70%' }} /></td>
+      ))}
+    </tr>
+  ));
+}
+
+export default function WatchlistTable({ rows, loading, filters }) {
+  const { sortKey, sortDir, handleSort, compare } = useSort();
+
+  const groups = useMemo(
+    () => groupRows(rows.filter((r) => matches(r, filters)), compare),
+    [rows, filters, compare],
+  );
+  const shown = groups.reduce((n, g) => n + g.rows.length, 0);
+
+  if (!loading && rows.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-24 gap-4">
-        <div className="w-14 h-14 rounded-2xl flex items-center justify-center" style={{ background: 'var(--bg-elevated)' }}>
-          <BarChart2 size={26} className="text-gray-600" />
+      <div className="flex flex-col items-center justify-center py-24 gap-3" style={{ color: 'var(--text-muted)' }}>
+        <div className="w-14 h-14 rounded-2xl flex items-center justify-center" style={{ background: 'var(--blue-soft)' }}>
+          <BarChart2 size={26} color="var(--blue)" />
         </div>
-        <div className="text-center">
-          <p className="text-gray-400 font-medium">Sin tickers en la lista</p>
-          <p className="text-gray-600 text-sm mt-1">Agregá un ticker con el botón <span className="text-blue-400">+ Ticker</span></p>
-        </div>
+        <p className="font-medium" style={{ color: 'var(--text)' }}>Todavía no hay papeles</p>
+        <p className="text-sm">El universo se arma solo desde BYMA y Yahoo; si esto persiste, revisá la consola del server</p>
       </div>
     );
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse">
-        <thead className="sticky top-0 z-20">
-          <tr style={{ background: 'var(--bg-surface)', borderBottom: '1px solid var(--border-default)' }}>
-            {COLUMNS.map((col) =>
-              col.noSort ? (
-                <th key={col.key} className="w-10" />
-              ) : (
-                <SortHeader
-                  key={col.key}
-                  label={col.label}
-                  colKey={col.key}
-                  sortKey={sortKey}
-                  sortDir={sortDir}
-                  onSort={handleSort}
-                  align={col.align}
-                />
-              )
-            )}
+    <div className="px-4 pt-3 pb-6">
+      <table className="sheet">
+        <thead>
+          <tr>
+            {COLUMNS.map((col) => (
+              <SortHeader key={col.key} col={col} sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+            ))}
           </tr>
         </thead>
         <tbody>
-          {filtered.map((row) => (
-            <TableRow
-              key={row.ticker}
-              row={row}
-              onUpdate={onUpdate}
-              onRemove={onRemove}
-              onAutoTargets={onAutoTargets}
-            />
+          {loading && <SkeletonRows />}
+          {!loading && groups.map((g) => (
+            <GroupRows key={g.sector} group={g} />
           ))}
-          {filtered.length === 0 && (
+          {!loading && shown === 0 && (
             <tr>
-              <td colSpan={COLUMNS.length} className="text-center py-10 text-gray-600 text-sm">
-                Sin tickers{filterSignal && <> con señal <strong className="text-gray-500">{filterSignal}</strong></>}{filterSector && <> en <strong className="text-gray-500">{filterSector}</strong></>}
+              <td colSpan={COLUMNS.length} className="py-10 text-sm" style={{ color: 'var(--text-muted)', height: 'auto' }}>
+                Ningún papel coincide con el filtro
               </td>
             </tr>
           )}
         </tbody>
       </table>
     </div>
+  );
+}
+
+function GroupRows({ group }) {
+  return (
+    <>
+      <tr className="group-row">
+        <td colSpan={COLUMNS.length}>
+          {group.sector.toUpperCase()}
+          <span className="group-count">{group.rows.length}</span>
+        </td>
+      </tr>
+      {group.rows.map((row, i) => (
+        <TableRow key={row.symbol} row={row} band={i % 2 === 0} />
+      ))}
+    </>
   );
 }

@@ -7,11 +7,14 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import watchlistRouter from './routes/watchlist.js';
 import { wsClients } from './services/broadcast.js';
+import * as market from './services/market.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
-const PORT = process.env.PORT || 3001;
 const isProd = process.env.NODE_ENV === 'production';
+// En producción el puerto lo impone la plataforma (Render); en desarrollo va fijo en 3001
+// porque el proxy de Vite apunta ahí (SERVER_PORT permite cambiarlo).
+const PORT = isProd ? (process.env.PORT || 3001) : (process.env.SERVER_PORT || 3001);
 
 app.use(cors({
   origin: isProd ? true : ['http://localhost:5173', 'http://127.0.0.1:5173'],
@@ -35,8 +38,11 @@ wss.on('connection', (ws, req) => {
   wsClients.add(ws);
   ws.on('close', () => wsClients.delete(ws));
   ws.on('error', () => wsClients.delete(ws));
+  // Estado actual apenas se conecta (así no espera al próximo tick)
+  ws.send(JSON.stringify({ type: 'watchlist', rows: market.getRows(), meta: market.getMeta() }));
 });
 
 httpServer.listen(PORT, () => {
   console.log(`Jony Signal server running on port ${PORT}`);
+  market.start();
 });

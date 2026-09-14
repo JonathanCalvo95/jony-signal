@@ -4,13 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Courier New', 'monospace'],
-      },
-      colors: {
-        base:    '#070d1a',
-        surface: '#0c1425',
-        elevated:'#111d36',
+        sans: ['Roboto', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },
     },
   },

@@ -1,128 +1,82 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { getWatchlist, addTicker, removeTicker, updateTargets, autoTargets, autoTargetsAll } from '../api/watchlistApi.js';
+import { getWatchlist } from '../api/watchlistApi.js';
 
-const REFRESH_INTERVAL = 60;
+const EMPTY_META = { updatedAt: null, loaded: 0, total: 0, booting: false, universe: null };
 
 function getWsUrl() {
   const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
   return `${proto}//${window.location.host}/ws`;
 }
 
+/**
+ * Estado principal: filas + meta. Carga inicial por REST y después el server
+ * empuja actualizaciones por WebSocket cada minuto (con fallback a REST si se cae).
+ */
 export function useWatchlist() {
   const [rows, setRows] = useState([]);
+  const [meta, setMeta] = useState(EMPTY_META);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState(null);
-  const [secondsLeft, setSecondsLeft] = useState(REFRESH_INTERVAL);
   const [wsConnected, setWsConnected] = useState(false);
   const wsRef = useRef(null);
-  const countdownRef = useRef(null);
   const lastRowsRef = useRef(null);
 
-  const fetchAll = useCallback(async (showLoading = false) => {
-    if (showLoading) setLoading(true);
+  const apply = useCallback((data) => {
+    const next = JSON.stringify(data.rows);
+    if (next !== lastRowsRef.current) {
+      lastRowsRef.current = next;
+      setRows(data.rows);
+    }
+    setMeta(data.meta ?? EMPTY_META);
+    setError(null); // llegaron datos: cualquier error anterior ya no aplica
+  }, []);
+
+  const fetchAll = useCallback(async ({ refresh = false, initial = false } = {}) => {
+    if (initial) setLoading(true);
+    if (refresh) setRefreshing(true);
     setError(null);
     try {
-      const data = await getWatchlist();
-      setRows(data);
-      lastRowsRef.current = JSON.stringify(data);
-      setSecondsLeft(REFRESH_INTERVAL);
+      apply(await getWatchlist({ refresh }));
     } catch (e) {
       setError(e.message);
     } finally {
       setLoading(false);
+      setRefreshing(false);
     }
-  }, []);
+  }, [apply]);
 
   useEffect(() => {
-    // Initial load via REST
-    fetchAll(true);
+    fetchAll({ initial: true });
 
-    // Countdown UI (purely cosmetic — no longer triggers fetch)
-    countdownRef.current = setInterval(() => {
-      setSecondsLeft((s) => (s <= 1 ? REFRESH_INTERVAL : s - 1));
-    }, 1000);
-
-    // WebSocket for real-time updates from server
+    let closed = false;
+    let retry = null;
     function connect() {
       const ws = new WebSocket(getWsUrl());
       wsRef.current = ws;
-
       ws.onopen = () => setWsConnected(true);
-
       ws.onmessage = (event) => {
         try {
           const msg = JSON.parse(event.data);
-          if (msg.type === 'watchlist') {
-            const next = JSON.stringify(msg.rows);
-            if (next !== lastRowsRef.current) {
-              lastRowsRef.current = next;
-              setRows(msg.rows);
-              setSecondsLeft(REFRESH_INTERVAL);
-            }
-          }
-        } catch { /* ignore malformed messages */ }
+          if (msg.type === 'watchlist') apply(msg);
+        } catch { /* mensaje malformado */ }
       };
-
       ws.onclose = () => {
         setWsConnected(false);
+        if (closed) return;
         fetchAll();
-        setTimeout(connect, 5_000);
+        retry = setTimeout(connect, 5_000);
       };
-
       ws.onerror = () => ws.close();
     }
-
     connect();
 
     return () => {
-      clearInterval(countdownRef.current);
-      if (wsRef.current) {
-        wsRef.current.onclose = null; // prevent reconnect on intentional unmount
-        wsRef.current.close();
-      }
+      closed = true;
+      clearTimeout(retry);
+      wsRef.current?.close();
     };
-  }, [fetchAll]);
+  }, [fetchAll, apply]);
 
-  async function addRow(ticker, targetBuy, targetSell) {
-    await addTicker(ticker, targetBuy, targetSell);
-    await fetchAll();
-  }
-
-  async function removeRow(ticker) {
-    await removeTicker(ticker);
-    setRows((prev) => prev.filter((r) => r.ticker !== ticker));
-  }
-
-  async function updateRow(ticker, updates) {
-    // Optimistic update
-    setRows((prev) =>
-      prev.map((r) => {
-        if (r.ticker !== ticker) return r;
-        const next = { ...r, ...updates };
-        const price = next.price;
-        const tb = next.targetBuy;
-        const ts = next.targetSell;
-        next.mediaSenal = tb && ts ? Math.round(((tb + ts) / 2) * 100) / 100 : null;
-        next.signal =
-          price == null ? 'HOLD'
-          : price <= tb ? 'BARATA'
-          : price >= ts ? 'CARA'
-          : 'HOLD';
-        return next;
-      })
-    );
-    await updateTargets(ticker, updates);
-  }
-
-  async function autoTargetsRow(ticker) {
-    const result = await autoTargets(ticker);
-    await updateRow(ticker, { targetBuy: result.targetBuy, targetSell: result.targetSell });
-  }
-
-  async function autoTargetsAllRows() {
-    await autoTargetsAll();
-    await fetchAll();
-  }
-
-  return { rows, loading, error, secondsLeft, wsConnected, fetchAll, addRow, removeRow, updateRow, autoTargetsRow, autoTargetsAllRows };
+  return { rows, meta, loading, refreshing, error, wsConnected, fetchAll };
 }

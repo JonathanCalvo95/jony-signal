@@ -1,11 +1,10 @@
-// Shared WebSocket broadcast — imported by both index.js and routes/watchlist.js
-// to avoid circular dependencies.
+// WebSocket compartido entre index.js y el scheduler (evita dependencias circulares).
 
 export const wsClients = new Set();
 
-export function broadcastWatchlist(rows) {
+export function broadcastWatchlist({ rows, meta }) {
   if (wsClients.size === 0) return;
-  const msg = JSON.stringify({ type: 'watchlist', rows });
+  const msg = JSON.stringify({ type: 'watchlist', rows, meta });
   for (const client of wsClients) {
     if (client.readyState === 1) client.send(msg);
   }

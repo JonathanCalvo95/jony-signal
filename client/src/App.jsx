@@ -1,258 +1,123 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
+import { AlertCircle, Search, X } from 'lucide-react';
 import { useWatchlist } from './hooks/useWatchlist.js';
 import WatchlistTable from './components/WatchlistTable.jsx';
-import AddTickerModal from './components/AddTickerModal.jsx';
-import RefreshCountdown from './components/RefreshCountdown.jsx';
-import SummaryBar from './components/SummaryBar.jsx';
-import { ToastProvider, useToast } from './components/Toast.jsx';
-import { Plus, Zap, AlertCircle, Wand2, Search } from 'lucide-react';
+import LiveStatus from './components/LiveStatus.jsx';
+import { SIGNALS, SIGNAL_KEYS, SECTOR_ORDER } from './utils/signals.js';
 
-const FILTER_OPTS = [
-  { label: 'Todos',  value: null },
-  { label: 'Baratas',value: 'BARATA' },
-  { label: 'Hold',   value: 'HOLD' },
-  { label: 'Caras',  value: 'CARA' },
-];
-
-const FILTER_COLORS = {
-  BARATA: { active: '#22d47a', bg: 'rgba(34,212,122,0.1)', border: 'rgba(34,212,122,0.3)' },
-  HOLD:   { active: '#f5a623', bg: 'rgba(245,166,35,0.1)',  border: 'rgba(245,166,35,0.3)' },
-  CARA:   { active: '#f04e6a', bg: 'rgba(240,78,106,0.1)',  border: 'rgba(240,78,106,0.3)' },
-  null:   { active: '#60a5fa', bg: 'rgba(96,165,250,0.08)', border: 'rgba(96,165,250,0.25)' },
-};
-
-function AppInner() {
-  const toast = useToast();
-  const { rows, loading, error, secondsLeft, wsConnected, fetchAll, addRow, removeRow, updateRow, autoTargetsRow, autoTargetsAllRows } = useWatchlist();
-  const [autoingAll,   setAutoingAll]   = useState(false);
-  const [showModal,    setShowModal]    = useState(false);
-  const [filterSignal, setFilterSignal] = useState(null);
-  const [filterSector, setFilterSector] = useState('');
-  const [searchQuery,  setSearchQuery]  = useState('');
-
-  async function handleAdd(ticker, targetBuy, targetSell) {
-    await addRow(ticker, targetBuy, targetSell);
-    toast(`${ticker} agregado a la lista`, 'success');
-  }
-
-  async function handleRemove(ticker) {
-    await removeRow(ticker);
-    toast(`${ticker} eliminado`, 'info');
-  }
-
-  async function handleUpdate(ticker, updates) {
-    await updateRow(ticker, updates);
-    toast(`${ticker} actualizado`, 'success');
-  }
-
-  async function handleAutoTargets(ticker) {
-    await autoTargetsRow(ticker);
-    toast(`${ticker} — targets calculados automáticamente`, 'success');
-  }
-
-  async function handleAutoTargetsAll() {
-    setAutoingAll(true);
-    try {
-      await autoTargetsAllRows();
-      toast('Targets actualizados para todos los papeles', 'success');
-    } catch (e) {
-      toast(e.message, 'error');
-    } finally {
-      setAutoingAll(false);
-    }
-  }
-
-  return (
-    <div className="min-h-screen flex flex-col" style={{ background: 'var(--bg-base)' }}>
-
-      {/* ── HEADER ── */}
-      <header
-        className="flex items-center justify-between px-5 py-3.5 sticky top-0 z-30"
-        style={{
-          background: 'rgba(7,13,26,0.92)',
-          backdropFilter: 'blur(12px)',
-          borderBottom: '1px solid var(--border-subtle)',
-        }}
-      >
-        {/* Brand */}
-        <div className="flex items-center gap-3">
-          <div
-            className="brand-chip flex items-center justify-center w-9 h-9 rounded-xl"
-            style={{ background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)' }}
-          >
-            <Zap size={16} fill="white" color="white" />
-          </div>
-          <div>
-            <h1 className="text-white font-bold text-[15px] tracking-wide leading-none bg-clip-text" style={{
-              backgroundImage: 'linear-gradient(90deg, #f0f4ff 0%, #c7d4ff 100%)',
-              WebkitBackgroundClip: 'text',
-              color: 'transparent',
-            }}>
-              JONY SIGNAL
-            </h1>
-            <p className="text-[10px] uppercase tracking-widest leading-none mt-0.5" style={{ color: 'var(--text-muted)' }}>
-              Lista de Seguimiento
-            </p>
-          </div>
-        </div>
-
-        {/* Controls */}
-        <div className="flex items-center gap-2">
-          <RefreshCountdown
-            secondsLeft={secondsLeft}
-            wsConnected={wsConnected}
-            onRefresh={() => fetchAll()}
-            loading={loading}
-          />
-          <div className="w-px h-5 mx-1" style={{ background: 'var(--border-default)' }} />
-          <button
-            onClick={handleAutoTargetsAll}
-            disabled={autoingAll || loading || rows.length === 0}
-            className="btn-secondary flex items-center gap-1.5 text-[13px] px-3 py-2"
-            title="Auto-calcular targets para todos los papeles"
-          >
-            <Wand2 size={13} strokeWidth={2} />
-            <span className="hidden sm:inline">{autoingAll ? 'Calculando…' : 'Auto todos'}</span>
-          </button>
-          <button
-            onClick={() => setShowModal(true)}
-            className="btn-primary flex items-center gap-1.5 text-[13px] px-3 py-2"
-          >
-            <Plus size={13} strokeWidth={2.5} />
-            <span className="hidden sm:inline">Ticker</span>
-          </button>
-        </div>
-      </header>
-
-      {/* ── ERROR BANNER ── */}
-      {error && (
-        <div
-          className="flex items-center gap-2 px-5 py-2.5 text-[13px]"
-          style={{ background: 'rgba(240,78,106,0.08)', borderBottom: '1px solid rgba(240,78,106,0.15)', color: '#f04e6a' }}
-        >
-          <AlertCircle size={14} />
-          {error}
-        </div>
-      )}
-
-      {/* ── SUMMARY BAR ── */}
-      {!loading && rows.length > 0 && (
-        <div style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-          <SummaryBar rows={rows} />
-        </div>
-      )}
-
-      {/* ── FILTER TABS ── */}
-      {!loading && rows.length > 0 && (
-        <div
-          className="flex items-center gap-2 px-5 py-2.5"
-          style={{ borderBottom: '1px solid var(--border-subtle)' }}
-        >
-          {/* Search */}
-          <div className="relative flex items-center mr-2">
-            <Search size={12} className="absolute left-2.5 pointer-events-none" style={{ color: 'var(--text-muted)' }} />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar ticker…"
-              className="pl-7 pr-3 py-1.5 rounded-lg text-[12px] font-mono outline-none"
-              style={{
-                background: 'var(--bg-elevated)',
-                border: '1px solid var(--border-subtle)',
-                color: 'var(--text-primary)',
-                width: 140,
-              }}
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-2 text-[10px] leading-none"
-                style={{ color: 'var(--text-muted)' }}
-              >✕</button>
-            )}
-          </div>
-          {/* Sector filter */}
-          <select
-            value={filterSector}
-            onChange={(e) => setFilterSector(e.target.value)}
-            className="px-2 py-1.5 rounded-lg text-[12px] font-medium outline-none mr-2"
-            style={{
-              background: filterSector ? 'rgba(96,165,250,0.08)' : 'var(--bg-elevated)',
-              border: filterSector ? '1px solid rgba(96,165,250,0.3)' : '1px solid var(--border-subtle)',
-              color: filterSector ? '#60a5fa' : 'var(--text-muted)',
-            }}
-          >
-            <option value="">Todos los sectores</option>
-            {['Tecnología','Semiconductores','IA & Innovación','Comunicación','Finanzas','Salud','Consumo','Energía','Industria','Materiales','Cripto','Latam','ETF','Argentina'].map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-
-          {FILTER_OPTS.map(({ label, value }) => {
-            const active = filterSignal === value;
-            const colors = FILTER_COLORS[value] ?? FILTER_COLORS[null];
-            return (
-              <button
-                key={label}
-                onClick={() => setFilterSignal(value)}
-                className={`filter-pill px-3 py-1.5 rounded-lg text-[12px] font-medium ${active ? 'is-active' : ''}`}
-                style={
-                  active
-                    ? { background: colors.bg, border: `1px solid ${colors.border}`, color: colors.active, boxShadow: `0 0 14px -6px ${colors.active}` }
-                    : { background: 'transparent', border: '1px solid transparent', color: 'var(--text-muted)' }
-                }
-              >
-                {label}
-                {value && (
-                  <span className="ml-1.5 font-mono text-[10px] opacity-70">
-                    {rows.filter((r) => r.signal === value).length}
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      )}
-
-      {/* ── TABLE ── */}
-      <main className="flex-1 overflow-auto">
-        <WatchlistTable
-          rows={rows}
-          loading={loading}
-          onUpdate={handleUpdate}
-          onRemove={handleRemove}
-          onAutoTargets={handleAutoTargets}
-          filterSignal={filterSignal}
-          filterSector={filterSector}
-          searchQuery={searchQuery}
-        />
-      </main>
-
-      {/* ── FOOTER ── */}
-      <footer
-        className="px-5 py-2 flex items-center justify-between text-[11px]"
-        style={{ borderTop: '1px solid var(--border-subtle)', color: 'var(--text-muted)' }}
-      >
-        <span>Datos: Yahoo Finance · Auto-refresh 60s</span>
-        <span className="hidden sm:block">Hacé clic en TARGET BUY/SELL para editar · 🪄 Auto-calcula con rango 52W</span>
-      </footer>
-
-      {/* ── MODAL ── */}
-      {showModal && (
-        <AddTickerModal
-          onAdd={handleAdd}
-          onClose={() => setShowModal(false)}
-        />
-      )}
-    </div>
-  );
+function universeLine(universe) {
+  if (!universe?.sources) return 'Universo automático: CEDEARs y acciones de BYMA · top cripto · índices';
+  const s = universe.sources;
+  const when = universe.updatedAt
+    ? new Date(universe.updatedAt).toLocaleString('es-AR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
+    : '';
+  return `Universo automático (${when}): ${s.cedears} CEDEARs listados en BYMA · ${s.argentina} acciones argentinas (paneles líder y general) · top ${s.cripto} cripto por capitalización · ${s.indices} índices`;
 }
 
 export default function App() {
+  const { rows, meta, loading, refreshing, error, wsConnected, fetchAll } = useWatchlist();
+  const [signal, setSignal] = useState(null);
+  const [sector, setSector] = useState('');
+  const [query, setQuery] = useState('');
+
+  const filters = useMemo(() => ({ signal, sector, query: query.trim() }), [signal, sector, query]);
+  const counts = useMemo(() => {
+    const c = Object.fromEntries(SIGNAL_KEYS.map((k) => [k, 0]));
+    for (const r of rows) if (r.signal) c[r.signal]++;
+    return c;
+  }, [rows]);
+  const sectors = useMemo(() => {
+    const present = new Set(rows.map((r) => r.sector).filter(Boolean));
+    return [...SECTOR_ORDER.filter((s) => present.has(s)), ...[...present].filter((s) => !SECTOR_ORDER.includes(s))];
+  }, [rows]);
+
   return (
-    <ToastProvider>
-      <AppInner />
-    </ToastProvider>
+    <div className="h-screen flex flex-col">
+      {/* ── Encabezado ── */}
+      <header className="flex items-center justify-between gap-3 px-4 py-2.5 shrink-0" style={{ background: 'var(--paper)', borderBottom: '1px solid var(--grid)' }}>
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="flex items-center justify-center w-9 h-9 rounded-lg shrink-0 font-bold text-white text-[13px]" style={{ background: 'var(--blue)' }}>JS</div>
+          <div className="min-w-0">
+            <h1 className="text-[15px] font-bold leading-none tracking-wide">JONY SIGNAL</h1>
+            <p className="text-[11px] mt-1 leading-none truncate" style={{ color: 'var(--text-muted)' }}>
+              Señales sobre el rango de 52 semanas · {rows.length} papeles · todo lo que cotiza en BYMA
+            </p>
+          </div>
+        </div>
+        <LiveStatus wsConnected={wsConnected} meta={meta} refreshing={refreshing} onRefresh={() => fetchAll({ refresh: true })} />
+      </header>
+
+      {error && (
+        <div className="flex items-center gap-2 px-4 py-2 text-[13px]" style={{ background: '#fce8e6', color: 'var(--down)', borderBottom: '1px solid #f4c7c3' }}>
+          <AlertCircle size={14} /> {error}
+        </div>
+      )}
+
+      {/* ── Filtros ── */}
+      <div className="flex flex-wrap items-center gap-2 px-4 py-2.5 shrink-0" style={{ borderBottom: '1px solid var(--grid)', background: 'var(--paper)' }}>
+        <div className="relative flex items-center">
+          <Search size={13} className="absolute left-2.5 pointer-events-none" style={{ color: 'var(--text-faint)' }} />
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Buscar ticker o nombre…"
+            className="input pl-8 pr-7 w-[200px]"
+            spellCheck={false}
+          />
+          {query && (
+            <button onClick={() => setQuery('')} className="absolute right-2" style={{ color: 'var(--text-faint)' }} aria-label="Limpiar búsqueda"><X size={13} /></button>
+          )}
+        </div>
+
+        <select
+          value={sector}
+          onChange={(e) => setSector(e.target.value)}
+          className="input pr-7"
+          style={{ color: sector ? 'var(--blue)' : 'var(--text-muted)', fontWeight: sector ? 500 : 400 }}
+        >
+          <option value="">Todos los sectores</option>
+          {sectors.map((s) => <option key={s} value={s}>{s}</option>)}
+        </select>
+
+        <div className="w-px h-6 mx-1 hidden sm:block" style={{ background: 'var(--grid)' }} />
+
+        <button onClick={() => setSignal(null)} className={`pill ${signal === null ? 'is-active' : ''}`} style={signal === null ? { background: 'var(--band)' } : undefined}>
+          Todas <span className="count">{rows.length}</span>
+        </button>
+        {SIGNAL_KEYS.map((key) => {
+          const active = signal === key;
+          return (
+            <button
+              key={key}
+              onClick={() => setSignal(active ? null : key)}
+              className={`pill ${active ? 'is-active' : ''}`}
+              style={active ? { background: SIGNALS[key].bg } : undefined}
+            >
+              <span className="w-2.5 h-2.5 rounded-sm" style={{ background: SIGNALS[key].bg, border: '1px solid rgba(0,0,0,0.12)' }} />
+              {SIGNALS[key].label} <span className="count">{counts[key]}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* ── Tabla ── */}
+      <main className="flex-1 min-h-0 overflow-auto">
+        <WatchlistTable rows={rows} loading={loading} filters={filters} />
+      </main>
+
+      {/* ── Pie ── */}
+      <footer className="px-4 py-2.5 text-[11px] leading-relaxed shrink-0" style={{ borderTop: '1px solid var(--grid)', color: 'var(--text-muted)', background: 'var(--paper)' }}>
+        <div>{universeLine(meta.universe)}</div>
+        <div className="flex flex-wrap gap-x-4 gap-y-1">
+          <span>Datos: Yahoo Finance · cotizaciones cada 60 s · histórico cada hora · universo cada 24 h</span>
+          <span>BUY = WEEK LOW + 50 % del rango · SELL = WEEK LOW + 85 % · CONVICCION: 85 en el mínimo, 80 en BUY, 17 en SELL, 15 en el máximo</span>
+          <span>30 = contra el cierre de 30 ruedas atrás · Anual / 5 Años = contra el cierre de esa fecha</span>
+        </div>
+        <div className="mt-1" style={{ color: 'var(--text-faint)' }}>
+          Las cotizaciones podrían tener una demora de hasta 15 minutos. La información se proporciona "tal como está" y únicamente con fines informativos, no para comercialización ni asesoramiento.
+        </div>
+      </footer>
+    </div>
   );
 }
