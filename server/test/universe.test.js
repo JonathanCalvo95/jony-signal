@@ -1,8 +1,34 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { baseSymbols, altSeriesCandidates } from '../services/byma.js';
+import { baseSymbols, altSeriesCandidates, arsCloses } from '../services/byma.js';
 import { parseComafiTable, toYahooSymbols } from '../services/comafi.js';
-import { displayTicker, isStableOrWrapped, pickCrypto, sectorFor } from '../services/universe.js';
+import { displayTicker, isStableOrWrapped, pickCrypto, sectorFor, parseRatio, formatRatio, estimateRatio, resolveRatio } from '../services/universe.js';
+
+test('BYMA: cierre anterior en pesos, plazo 24 hs primero', () => {
+  const rows = [
+    { symbol: 'TSM', denominationCcy: 'ARS', settlementType: '1', previousClosingPrice: 74375 },
+    { symbol: 'TSM', denominationCcy: 'ARS', settlementType: '2', previousClosingPrice: 74500 },
+    { symbol: 'TSMD', denominationCcy: 'USD', settlementType: '2', previousClosingPrice: 48.47 },
+    { symbol: 'KEEL', denominationCcy: 'ARS', settlementType: '2', previousClosingPrice: 0 },
+  ];
+  assert.deepEqual([...arsCloses(rows)], [['TSM', 74500]]);
+});
+
+test('Ratio: Comafi solo si el precio lo confirma; si no, el del precio', () => {
+  assert.equal(parseRatio('9:1'), 9);
+  assert.equal(parseRatio('1:5'), 0.2);
+  assert.equal(parseRatio('-'), null);
+  assert.equal(formatRatio(56.21), '56:1');
+  assert.equal(formatRatio(0.2), '1:5');
+  // Precios del 19/10/2026: TSM US$421,23 · CEDEAR $76.050 · CCL 1.627 → 9
+  const tsm = estimateRatio(421.23, 76050, 1627);
+  assert.ok(Math.abs(tsm - 9.01) < 0.01);
+  assert.deepEqual(resolveRatio('1:3', tsm), { ratio: '9:1', ratioFuente: 'precio' });     // Comafi viejo
+  assert.deepEqual(resolveRatio('24:1', 23.8), { ratio: '24:1', ratioFuente: 'comafi' });  // confirmado
+  assert.deepEqual(resolveRatio(null, 0.2), { ratio: '1:5', ratioFuente: 'precio' });      // KEEL, sin programa
+  assert.deepEqual(resolveRatio('4:1', null), { ratio: '4:1', ratioFuente: 'comafi' });    // sin precio
+  assert.deepEqual(resolveRatio(null, null), { ratio: null, ratioFuente: null });
+});
 
 test('BYMA: un símbolo por especie, solo en pesos, sin fondos cerrados', () => {
   const rows = [

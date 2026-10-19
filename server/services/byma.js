@@ -53,13 +53,34 @@ export function altSeriesCandidates(symbols) {
   return out;
 }
 
-/** CEDEARs listados en BYMA. */
-export async function fetchCedearSymbols() {
-  return baseSymbols(await post('cedears'));
+/** Cierre anterior en pesos por símbolo (plazo 24 hs si lo hay, que es el que más opera). */
+export function arsCloses(rows) {
+  const out = new Map();
+  for (const r of rows) {
+    if (r.denominationCcy !== 'ARS' || !r.symbol || !(r.previousClosingPrice > 0)) continue;
+    const sym = r.symbol.trim();
+    if (!out.has(sym) || r.settlementType === '2') out.set(sym, r.previousClosingPrice);
+  }
+  return out;
 }
 
-/** Acciones argentinas: panel líder + panel general. */
-export async function fetchArgentinaSymbols() {
+/** CEDEARs listados en BYMA, con su cierre anterior en pesos (para estimar el ratio). */
+export async function fetchCedears() {
+  const rows = await post('cedears');
+  return { symbols: baseSymbols(rows), closes: arsCloses(rows) };
+}
+
+export async function fetchCedearSymbols() {
+  return (await fetchCedears()).symbols;
+}
+
+/** Acciones argentinas: panel líder + panel general, con su cierre anterior en pesos. */
+export async function fetchArgentina() {
   const [leading, general] = await Promise.all([post('leading-equity'), post('general-equity')]);
-  return baseSymbols([...leading, ...general], { dropFunds: true });
+  const rows = [...leading, ...general];
+  return { symbols: baseSymbols(rows, { dropFunds: true }), closes: arsCloses(rows) };
+}
+
+export async function fetchArgentinaSymbols() {
+  return (await fetchArgentina()).symbols;
 }

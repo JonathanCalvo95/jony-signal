@@ -69,6 +69,12 @@ Todo vive en `server/services/signals.js` (funciones puras) y está testeado en 
   próximo tick del scheduler.
 - Ticker visible: el de Yahoo sin sufijo (AAPL, ABEV3, RUT, BTC); las acciones argentinas conservan el
   ticker de BYMA (YPFD, TECO2). El tooltip muestra nombre, tipo, símbolo BYMA, ratio y símbolo Yahoo.
+- **Ratio**: en cada refresco se estima con el cierre anterior de los dos lados (subyacente en dólares ×
+  CCL de GGAL ÷ CEDEAR en pesos de BYMA). Se usa el de Comafi solo si el precio lo confirma (±5 %); si
+  no, el del precio (`ratioFuente: 'precio'`, "≈" en el tooltip). La tabla de Comafi tiene ratios
+  viejos: el 19/10/2026 corrigió 63 (TSM 1:3 → 9:1, AAPL 10:1 → 20:1), todos por un factor entero.
+  Sin ratio quedan los subyacentes que no cotizan en dólares (B3, Xetra, Ámsterdam) y no figuran en Comafi.
+  Los ratios grandes sin Comafi pueden errar por ±1 (WDC ≈91 un día, 92 en la mediana de 20).
 
 ### Colores (Google Sheets)
 
@@ -141,7 +147,7 @@ jony-signal/
 ```js
 {
   symbol, ticker, nombre, sector, tipo,          // symbol = Yahoo ("TGSU2.BA"), ticker visible ("TGSU2")
-  bymaTicker, ratio,                             // símbolo en BYMA y ratio del CEDEAR (Comafi), si se conocen
+  bymaTicker, ratio, ratioFuente,                // símbolo en BYMA, ratio del CEDEAR y de dónde salió ('comafi' | 'precio')
   price, change24h, rsi, change30,
   weekLow52, weekHigh52, buy, sell,
   conviction,                                    // 15–85

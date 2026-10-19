@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-14T13:57:50.080Z",
+  "updatedAt": "2026-10-19T18:45:54.596Z",
   "sources": {
     "cedears": 410,
-    "argentina": 70,
+    "argentina": 72,
     "cripto": 25,
     "indices": 5,
-    "unresolved": 18
+    "unresolved": 14
   },
   "entries": [
     {
@@ -18,8 +18,9 @@
       "tipo": "cedear",
       "industry": "Airlines",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AAP",
@@ -31,8 +32,9 @@
       "tipo": "cedear",
       "industry": "Auto Parts",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "14:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AAPL",
@@ -44,8 +46,9 @@
       "tipo": "cedear",
       "industry": "Consumer Electronics",
       "exchange": "NMS",
-      "ratio": "10:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ABBV",
@@ -58,7 +61,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
       "ratio": "10:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ABEV",
@@ -71,7 +75,8 @@
       "industry": "Beverages—Brewers",
       "exchange": "NYQ",
       "ratio": "1:3",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ABEV3.SA",
@@ -84,7 +89,8 @@
       "industry": "Beverages—Brewers",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "ABNB",
@@ -96,8 +102,9 @@
       "tipo": "cedear",
       "industry": "Travel Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ABT",
@@ -110,7 +117,8 @@
       "industry": "Medical Devices",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ACN",
@@ -122,8 +130,9 @@
       "tipo": "cedear",
       "industry": "Information Technology Services",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "75:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ACWI",
@@ -135,8 +144,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "26:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ADBE",
@@ -148,8 +158,9 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NMS",
-      "ratio": "22:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "44:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ADI",
@@ -161,8 +172,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ADP",
@@ -175,7 +187,8 @@
       "industry": "Software—Application",
       "exchange": "NMS",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ADS.DE",
@@ -188,7 +201,8 @@
       "industry": "Footwear & Accessories",
       "exchange": "GER",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "AEG",
@@ -201,7 +215,8 @@
       "industry": "Insurance—Diversified",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "AEM",
@@ -213,8 +228,9 @@
       "tipo": "cedear",
       "industry": "Gold",
       "exchange": "NYQ",
-      "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AGRO",
@@ -226,8 +242,9 @@
       "tipo": "cedear",
       "industry": "Farm Products",
       "exchange": "NYQ",
-      "ratio": "1:2",
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AI",
@@ -239,8 +256,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AIG",
@@ -253,7 +271,8 @@
       "industry": "Insurance—Diversified",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "AKO-B",
@@ -265,8 +284,9 @@
       "tipo": "cedear",
       "industry": "Beverages—Non-Alcoholic",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ALAB",
@@ -278,8 +298,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "44:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AMAT",
@@ -292,7 +313,8 @@
       "industry": "Semiconductor Equipment & Materials",
       "exchange": "NMS",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "AMD",
@@ -304,8 +326,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": "1:2",
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AMGN",
@@ -317,8 +340,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—General",
       "exchange": "NMS",
-      "ratio": "10:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "30:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AMX",
@@ -331,7 +355,8 @@
       "industry": "Telecom Services",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "AMZN",
@@ -344,7 +369,8 @@
       "industry": "Internet Retail",
       "exchange": "NMS",
       "ratio": "144:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ANET",
@@ -356,8 +382,9 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "29:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ANF",
@@ -370,7 +397,8 @@
       "industry": "Apparel Retail",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ARCO",
@@ -383,7 +411,8 @@
       "industry": "Restaurants",
       "exchange": "NYQ",
       "ratio": "1:2",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ARKK",
@@ -395,8 +424,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "BTS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ARM",
@@ -408,8 +438,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "27:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ASML",
@@ -421,8 +452,9 @@
       "tipo": "cedear",
       "industry": "Semiconductor Equipment & Materials",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "145:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ASR",
@@ -434,8 +466,9 @@
       "tipo": "cedear",
       "industry": "Airports & Air Services",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ASTS",
@@ -447,8 +480,9 @@
       "tipo": "cedear",
       "industry": "Communication Equipment",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AVGO",
@@ -461,7 +495,8 @@
       "industry": "Semiconductors",
       "exchange": "NMS",
       "ratio": "39:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "AVY",
@@ -473,8 +508,9 @@
       "tipo": "cedear",
       "industry": "Packaging & Containers",
       "exchange": "NYQ",
-      "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AXP",
@@ -486,8 +522,9 @@
       "tipo": "cedear",
       "industry": "Credit Services",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "AZN",
@@ -499,8 +536,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BA",
@@ -512,8 +550,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
-      "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "24:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BABA",
@@ -526,7 +565,8 @@
       "industry": "Internet Retail",
       "exchange": "NYQ",
       "ratio": "9:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BAC",
@@ -538,8 +578,9 @@
       "tipo": "cedear",
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BAK",
@@ -551,21 +592,9 @@
       "tipo": "cedear",
       "industry": "Chemicals",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "BAS.DE",
-      "ticker": "BAS",
-      "bymaTicker": "BAS",
-      "source": "byma-cedear",
-      "nombre": "BASF SE",
-      "sector": "Materiales",
-      "tipo": "cedear",
-      "industry": "Chemicals",
-      "exchange": "GER",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BAYN.DE",
@@ -578,7 +607,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "GER",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BB",
@@ -591,7 +621,8 @@
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BBAS3.SA",
@@ -604,7 +635,36 @@
       "industry": "Banks—Regional",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
+    },
+    {
+      "symbol": "BBAX",
+      "ticker": "BBAX",
+      "bymaTicker": "BBAX",
+      "source": "byma-cedear",
+      "nombre": "JPMorgan BetaBuilders Developed Asia Pacific ex-Japan ETF",
+      "sector": "ETF",
+      "tipo": "etf",
+      "industry": null,
+      "exchange": "BTS",
+      "ratio": "13:1",
+      "checkedAt": "2026-10-19",
+      "ratioFuente": "precio"
+    },
+    {
+      "symbol": "BBCA",
+      "ticker": "BBCA",
+      "bymaTicker": "BBCA",
+      "source": "byma-cedear",
+      "nombre": "JPMorgan BetaBuilders Canada ETF",
+      "sector": "ETF",
+      "tipo": "etf",
+      "industry": null,
+      "exchange": "BTS",
+      "ratio": "20:1",
+      "checkedAt": "2026-10-19",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BBD",
@@ -617,7 +677,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BBDC3.SA",
@@ -630,7 +691,8 @@
       "industry": "Banks—Regional",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "BBVA",
@@ -643,7 +705,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BCS",
@@ -656,7 +719,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BG",
@@ -669,7 +733,8 @@
       "industry": "Farm Products",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BHP",
@@ -682,7 +747,8 @@
       "industry": "Other Industrial Metals & Mining",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BIDU",
@@ -695,7 +761,8 @@
       "industry": "Internet Content & Information",
       "exchange": "NMS",
       "ratio": "11:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BIIB",
@@ -708,7 +775,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NMS",
       "ratio": "13:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BIOX",
@@ -720,8 +788,9 @@
       "tipo": "cedear",
       "industry": "Agricultural Inputs",
       "exchange": "NMS",
-      "ratio": "1:2",
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BKNG",
@@ -733,8 +802,9 @@
       "tipo": "cedear",
       "industry": "Travel Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "681:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BKR",
@@ -746,8 +816,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas Equipment & Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "7:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BMNR",
@@ -759,8 +830,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BMY",
@@ -773,7 +845,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BNY",
@@ -785,8 +858,9 @@
       "tipo": "cedear",
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "BP",
@@ -799,7 +873,8 @@
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BRK-B",
@@ -812,7 +887,8 @@
       "industry": "Insurance—Diversified",
       "exchange": "NYQ",
       "ratio": "22:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BSBR",
@@ -825,7 +901,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BSN.DE",
@@ -838,7 +915,8 @@
       "industry": "Packaged Foods",
       "exchange": "GER",
       "ratio": "20:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "BX",
@@ -850,8 +928,9 @@
       "tipo": "cedear",
       "industry": "Asset Management",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "30:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "C",
@@ -864,7 +943,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "CAAP",
@@ -877,7 +957,8 @@
       "industry": "Airports & Air Services",
       "exchange": "NYQ",
       "ratio": "1:4",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "CAH",
@@ -890,7 +971,8 @@
       "industry": "Medical Distribution",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "CAR",
@@ -902,8 +984,9 @@
       "tipo": "cedear",
       "industry": "Rental & Leasing Services",
       "exchange": "NMS",
-      "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "26:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CAT",
@@ -915,8 +998,9 @@
       "tipo": "cedear",
       "industry": "Farm & Heavy Construction Machinery",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CCJ",
@@ -928,8 +1012,9 @@
       "tipo": "cedear",
       "industry": "Uranium",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "23:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CCL",
@@ -941,8 +1026,9 @@
       "tipo": "cedear",
       "industry": "Travel Services",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CDE",
@@ -955,7 +1041,8 @@
       "industry": "Gold",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "CEG",
@@ -967,8 +1054,9 @@
       "tipo": "cedear",
       "industry": "Utilities—Independent Power Producers",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "45:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CIBR",
@@ -980,8 +1068,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CL",
@@ -994,7 +1083,8 @@
       "industry": "Household & Personal Products",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "CLS",
@@ -1006,8 +1096,9 @@
       "tipo": "cedear",
       "industry": "Electronic Components",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "COIN",
@@ -1019,8 +1110,9 @@
       "tipo": "cedear",
       "industry": "Financial Data & Stock Exchanges",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "27:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "COP",
@@ -1032,8 +1124,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas E&P",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "25:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "COPX",
@@ -1045,8 +1138,23 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "14:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
+    },
+    {
+      "symbol": "CORN",
+      "ticker": "CORN",
+      "bymaTicker": "CORN",
+      "source": "byma-cedear",
+      "nombre": "Teucrium Corn Fund",
+      "sector": "ETF",
+      "tipo": "etf",
+      "industry": null,
+      "exchange": "PCX",
+      "ratio": "4:1",
+      "checkedAt": "2026-10-19",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "COST",
@@ -1058,8 +1166,9 @@
       "tipo": "cedear",
       "industry": "Discount Stores",
       "exchange": "NMS",
-      "ratio": "12:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "48:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CRM",
@@ -1071,8 +1180,9 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NYQ",
-      "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CRWD",
@@ -1084,8 +1194,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "79:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CRWV",
@@ -1097,8 +1208,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "27:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CSCO",
@@ -1111,7 +1223,8 @@
       "industry": "Communication Equipment",
       "exchange": "NMS",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "CSNA3.SA",
@@ -1124,7 +1237,8 @@
       "industry": "Steel",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "CVS",
@@ -1136,8 +1250,9 @@
       "tipo": "cedear",
       "industry": "Healthcare Plans",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CVX",
@@ -1149,8 +1264,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
-      "ratio": "8:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "16:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "CX",
@@ -1163,7 +1279,8 @@
       "industry": "Building Materials",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "DAL",
@@ -1175,8 +1292,9 @@
       "tipo": "cedear",
       "industry": "Airlines",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DD",
@@ -1189,7 +1307,8 @@
       "industry": "Specialty Chemicals",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "DE",
@@ -1201,8 +1320,9 @@
       "tipo": "cedear",
       "industry": "Farm & Heavy Construction Machinery",
       "exchange": "NYQ",
-      "ratio": "10:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "40:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DECK",
@@ -1214,8 +1334,9 @@
       "tipo": "cedear",
       "industry": "Footwear & Accessories",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "25:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DELL",
@@ -1227,8 +1348,9 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "73:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DEO",
@@ -1241,7 +1363,8 @@
       "industry": "Beverages—Wineries & Distilleries",
       "exchange": "NYQ",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "DHR",
@@ -1253,8 +1376,9 @@
       "tipo": "cedear",
       "industry": "Diagnostics & Research",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "54:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DIA",
@@ -1266,8 +1390,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DIS",
@@ -1279,8 +1404,9 @@
       "tipo": "cedear",
       "industry": "Entertainment",
       "exchange": "NYQ",
-      "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "DOCU",
@@ -1293,7 +1419,8 @@
       "industry": "Software—Application",
       "exchange": "NMS",
       "ratio": "22:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "DOW",
@@ -1305,8 +1432,9 @@
       "tipo": "cedear",
       "industry": "Chemicals",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "E",
@@ -1319,7 +1447,8 @@
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "EBAY",
@@ -1332,7 +1461,8 @@
       "industry": "Internet Retail",
       "exchange": "NMS",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ECL",
@@ -1344,8 +1474,9 @@
       "tipo": "cedear",
       "industry": "Specialty Chemicals",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "56:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "EEM",
@@ -1357,8 +1488,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "EFA",
@@ -1370,8 +1502,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "EFX",
@@ -1384,7 +1517,8 @@
       "industry": "Consulting Services",
       "exchange": "NYQ",
       "ratio": "16:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "EMBJ",
@@ -1396,21 +1530,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "EOAN.DE",
-      "ticker": "EOAN",
-      "bymaTicker": "EOAN",
-      "source": "byma-cedear",
-      "nombre": "E.ON SE",
-      "sector": "Servicios Públicos",
-      "tipo": "cedear",
-      "industry": "Utilities—Diversified",
-      "exchange": "GER",
-      "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "EQNR",
@@ -1422,8 +1544,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ERIC",
@@ -1436,7 +1559,8 @@
       "industry": "Communication Equipment",
       "exchange": "NMS",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ESGU",
@@ -1448,8 +1572,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "30:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ETHA",
@@ -1461,8 +1586,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ETSY",
@@ -1475,7 +1601,8 @@
       "industry": "Internet Retail",
       "exchange": "NYQ",
       "ratio": "16:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "EWJ",
@@ -1487,8 +1614,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "14:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "EWY",
@@ -1500,8 +1628,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "50:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "EWZ",
@@ -1513,8 +1642,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "F",
@@ -1526,8 +1656,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FCX",
@@ -1539,8 +1670,9 @@
       "tipo": "cedear",
       "industry": "Copper",
       "exchange": "NYQ",
-      "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FDX",
@@ -1553,7 +1685,8 @@
       "industry": "Integrated Freight & Logistics",
       "exchange": "NYQ",
       "ratio": "10:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "FISV",
@@ -1565,8 +1698,9 @@
       "tipo": "cedear",
       "industry": "Information Technology Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "11:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FMCC",
@@ -1579,7 +1713,8 @@
       "industry": "Mortgage Finance",
       "exchange": "OQB",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FMX",
@@ -1591,8 +1726,9 @@
       "tipo": "cedear",
       "industry": "Beverages—Brewers",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FNMA",
@@ -1605,7 +1741,8 @@
       "industry": "Mortgage Finance",
       "exchange": "OQB",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FSLR",
@@ -1617,8 +1754,9 @@
       "tipo": "cedear",
       "industry": "Solar",
       "exchange": "NMS",
-      "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "FXI",
@@ -1630,8 +1768,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GDX",
@@ -1643,8 +1782,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GE",
@@ -1656,8 +1796,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
-      "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GEV",
@@ -1669,8 +1810,9 @@
       "tipo": "cedear",
       "industry": "Specialty Industrial Machinery",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "180:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GFI",
@@ -1683,7 +1825,8 @@
       "industry": "Gold",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GGB",
@@ -1696,7 +1839,8 @@
       "industry": "Steel",
       "exchange": "NYQ",
       "ratio": "1:4",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GILD",
@@ -1709,7 +1853,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NMS",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GLD",
@@ -1721,8 +1866,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "50:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GLNG",
@@ -1734,8 +1880,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas Midstream",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GLOB",
@@ -1747,8 +1894,9 @@
       "tipo": "cedear",
       "industry": "Information Technology Services",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GLW",
@@ -1761,7 +1909,8 @@
       "industry": "Electronic Components",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GM",
@@ -1773,8 +1922,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GOLD",
@@ -1786,8 +1936,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GOOGL",
@@ -1800,7 +1951,8 @@
       "industry": "Internet Content & Information",
       "exchange": "NMS",
       "ratio": "58:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GPRK",
@@ -1813,7 +1965,8 @@
       "industry": "Oil & Gas E&P",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GRMN",
@@ -1826,7 +1979,8 @@
       "industry": "Scientific & Technical Instruments",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GS",
@@ -1839,7 +1993,22 @@
       "industry": "Capital Markets",
       "exchange": "NYQ",
       "ratio": "13:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
+    },
+    {
+      "symbol": "GSG",
+      "ticker": "GSG",
+      "bymaTicker": "GSG",
+      "source": "byma-cedear",
+      "nombre": "iShares S&P GSCI Commodity-Indexed Trust",
+      "sector": "ETF",
+      "tipo": "etf",
+      "industry": null,
+      "exchange": "PCX",
+      "ratio": "6:1",
+      "checkedAt": "2026-10-19",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "GSK",
@@ -1852,7 +2021,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "GT",
@@ -1864,8 +2034,9 @@
       "tipo": "cedear",
       "industry": "Auto Parts",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "HAL",
@@ -1878,7 +2049,8 @@
       "industry": "Oil & Gas Equipment & Services",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HAPV3.SA",
@@ -1891,7 +2063,8 @@
       "industry": "Insurance—Life",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "HD",
@@ -1903,8 +2076,9 @@
       "tipo": "cedear",
       "industry": "Home Improvement Retail",
       "exchange": "NYQ",
-      "ratio": "8:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "32:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "HDB",
@@ -1917,20 +2091,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "HHPD.IL",
-      "ticker": "HHPD",
-      "bymaTicker": "HHPD",
-      "source": "byma-cedear",
-      "nombre": "Hon Hai Precision Industry Co., Ltd.",
-      "sector": "Tecnología",
-      "tipo": "cedear",
-      "industry": "Electronic Components",
-      "exchange": "IOB",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HIMS",
@@ -1942,8 +2104,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—Specialty & Generic",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "HL",
@@ -1956,7 +2119,8 @@
       "industry": "Other Precious Metals & Mining",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HMC",
@@ -1969,7 +2133,8 @@
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HMY",
@@ -1982,7 +2147,8 @@
       "industry": "Gold",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HOG",
@@ -1995,7 +2161,8 @@
       "industry": "Recreational Vehicles",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HON",
@@ -2008,7 +2175,8 @@
       "industry": "Conglomerates",
       "exchange": "NMS",
       "ratio": "8:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HOOD",
@@ -2020,8 +2188,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "29:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "HPQ",
@@ -2034,7 +2203,8 @@
       "industry": "Computer Hardware",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HSBC",
@@ -2047,7 +2217,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "HSY",
@@ -2059,8 +2230,9 @@
       "tipo": "cedear",
       "industry": "Confectioners",
       "exchange": "NYQ",
-      "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "21:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "HUT",
@@ -2072,8 +2244,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "HWM",
@@ -2086,7 +2259,8 @@
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "IBB",
@@ -2098,8 +2272,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "27:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IBIT",
@@ -2111,8 +2286,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IBKR",
@@ -2124,8 +2300,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "17:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IBM",
@@ -2137,8 +2314,9 @@
       "tipo": "cedear",
       "industry": "Information Technology Services",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IBN",
@@ -2151,7 +2329,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ICLN",
@@ -2163,8 +2342,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IEMG",
@@ -2176,8 +2356,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IEUR",
@@ -2189,8 +2370,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "11:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IFF",
@@ -2202,8 +2384,9 @@
       "tipo": "cedear",
       "industry": "Specialty Chemicals",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IJH",
@@ -2215,8 +2398,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ILF",
@@ -2228,8 +2412,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "INFY",
@@ -2242,7 +2427,8 @@
       "industry": "Information Technology Services",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ING",
@@ -2255,7 +2441,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "INTC",
@@ -2268,7 +2455,8 @@
       "industry": "Semiconductors",
       "exchange": "NMS",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "IP",
@@ -2281,7 +2469,8 @@
       "industry": "Packaging & Containers",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "IREN",
@@ -2293,8 +2482,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ISRG",
@@ -2306,8 +2496,9 @@
       "tipo": "cedear",
       "industry": "Medical Instruments & Supplies",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "92:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ITA",
@@ -2319,8 +2510,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "BTS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "50:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ITUB",
@@ -2333,7 +2525,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ITUB3.SA",
@@ -2346,7 +2539,8 @@
       "industry": "Banks—Regional",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "IVE",
@@ -2358,8 +2552,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "40:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IVV",
@@ -2371,8 +2566,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "688:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IVW",
@@ -2384,8 +2580,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IWDA.AS",
@@ -2398,7 +2595,8 @@
       "industry": null,
       "exchange": "AMS",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "IWM",
@@ -2410,8 +2608,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "JCI",
@@ -2424,7 +2623,8 @@
       "industry": "Building Products & Equipment",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "JD",
@@ -2436,8 +2636,9 @@
       "tipo": "cedear",
       "industry": "Internet Retail",
       "exchange": "NMS",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "JMIA",
@@ -2449,8 +2650,9 @@
       "tipo": "cedear",
       "industry": "Internet Retail",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "JNJ",
@@ -2462,8 +2664,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "JOYY",
@@ -2475,8 +2678,9 @@
       "tipo": "cedear",
       "industry": "Internet Content & Information",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "JPM",
@@ -2488,8 +2692,9 @@
       "tipo": "cedear",
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "KB",
@@ -2502,7 +2707,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "KEEL",
@@ -2514,8 +2720,9 @@
       "tipo": "cedear",
       "industry": "Information Technology Services",
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:5",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "KEP",
@@ -2528,7 +2735,8 @@
       "industry": "Utilities—Regulated Electric",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "KGC",
@@ -2541,7 +2749,8 @@
       "industry": "Gold",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "KLAC",
@@ -2553,8 +2762,9 @@
       "tipo": "cedear",
       "industry": "Semiconductor Equipment & Materials",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "34:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "KMB",
@@ -2567,7 +2777,8 @@
       "industry": "Household & Personal Products",
       "exchange": "NMS",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "KO",
@@ -2580,7 +2791,8 @@
       "industry": "Beverages—Non-Alcoholic",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "KOF",
@@ -2593,7 +2805,8 @@
       "industry": "Beverages—Non-Alcoholic",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "LAC",
@@ -2605,8 +2818,9 @@
       "tipo": "cedear",
       "industry": "Other Industrial Metals & Mining",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "LAR",
@@ -2618,8 +2832,9 @@
       "tipo": "cedear",
       "industry": "Other Industrial Metals & Mining",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "LIN",
@@ -2631,8 +2846,9 @@
       "tipo": "cedear",
       "industry": "Specialty Chemicals",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "102:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "LLY",
@@ -2644,8 +2860,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
-      "ratio": "8:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "56:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "LMT",
@@ -2658,7 +2875,8 @@
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
       "ratio": "20:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "LND",
@@ -2670,8 +2888,9 @@
       "tipo": "cedear",
       "industry": "Farm Products",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "LRCX",
@@ -2683,8 +2902,9 @@
       "tipo": "cedear",
       "industry": "Semiconductor Equipment & Materials",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "56:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "LREN3.SA",
@@ -2697,7 +2917,8 @@
       "industry": "Department Stores",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "LVS",
@@ -2710,7 +2931,8 @@
       "industry": "Resorts & Casinos",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "LYG",
@@ -2723,7 +2945,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MA",
@@ -2736,7 +2959,8 @@
       "industry": "Credit Services",
       "exchange": "NYQ",
       "ratio": "33:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MBG.DE",
@@ -2749,7 +2973,8 @@
       "industry": "Auto Manufacturers",
       "exchange": "GER",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "MCD",
@@ -2761,8 +2986,9 @@
       "tipo": "cedear",
       "industry": "Restaurants",
       "exchange": "NYQ",
-      "ratio": "8:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "24:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MDLZ",
@@ -2774,8 +3000,9 @@
       "tipo": "cedear",
       "industry": "Confectioners",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MDT",
@@ -2788,7 +3015,8 @@
       "industry": "Medical Devices",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MELI",
@@ -2800,8 +3028,9 @@
       "tipo": "cedear",
       "industry": "Internet Retail",
       "exchange": "NMS",
-      "ratio": "60:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "119:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "META",
@@ -2813,8 +3042,9 @@
       "tipo": "cedear",
       "industry": "Internet Content & Information",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "24:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MFG",
@@ -2827,7 +3057,8 @@
       "industry": "Banks—Regional",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MGLU3.SA",
@@ -2840,7 +3071,8 @@
       "industry": "Specialty Retail",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "MMM",
@@ -2852,8 +3084,9 @@
       "tipo": "cedear",
       "industry": "Conglomerates",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MO",
@@ -2866,7 +3099,8 @@
       "industry": "Tobacco",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MOS",
@@ -2878,8 +3112,9 @@
       "tipo": "cedear",
       "industry": "Agricultural Inputs",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MP",
@@ -2891,8 +3126,9 @@
       "tipo": "cedear",
       "industry": "Other Industrial Metals & Mining",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MRK",
@@ -2905,7 +3141,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MRNA",
@@ -2917,8 +3154,9 @@
       "tipo": "cedear",
       "industry": "Biotechnology",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "19:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MRSH",
@@ -2930,8 +3168,9 @@
       "tipo": "cedear",
       "industry": "Insurance Brokers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "16:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MRVL",
@@ -2943,8 +3182,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "14:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MS",
@@ -2956,8 +3196,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "41:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MSFT",
@@ -2969,8 +3210,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
-      "ratio": "10:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "30:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MSI",
@@ -2982,8 +3224,9 @@
       "tipo": "cedear",
       "industry": "Communication Equipment",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MSTR",
@@ -2995,8 +3238,9 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MU",
@@ -3008,8 +3252,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "MUFG",
@@ -3022,7 +3267,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "MUX",
@@ -3034,8 +3280,9 @@
       "tipo": "cedear",
       "industry": "Other Precious Metals & Mining",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NATU3.SA",
@@ -3048,7 +3295,8 @@
       "industry": "Household & Personal Products",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "NBIS",
@@ -3060,8 +3308,9 @@
       "tipo": "cedear",
       "industry": "Internet Content & Information",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "27:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NEE",
@@ -3073,8 +3322,9 @@
       "tipo": "cedear",
       "industry": "Utilities—Regulated Electric",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "19:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NEM",
@@ -3087,7 +3337,8 @@
       "industry": "Gold",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NFLX",
@@ -3099,8 +3350,9 @@
       "tipo": "cedear",
       "industry": "Entertainment",
       "exchange": "NMS",
-      "ratio": "16:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "48:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NG",
@@ -3113,7 +3365,8 @@
       "industry": "Gold",
       "exchange": "ASE",
       "ratio": "1:4",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NGG",
@@ -3126,7 +3379,8 @@
       "industry": "Utilities—Regulated Electric",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NIO",
@@ -3138,8 +3392,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NKE",
@@ -3151,8 +3406,9 @@
       "tipo": "cedear",
       "industry": "Footwear & Accessories",
       "exchange": "NYQ",
-      "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NMR",
@@ -3165,7 +3421,8 @@
       "industry": "Capital Markets",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NOK",
@@ -3178,7 +3435,8 @@
       "industry": "Communication Equipment",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NOW",
@@ -3190,8 +3448,9 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "171:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NSANY",
@@ -3204,7 +3463,8 @@
       "industry": "Auto Manufacturers",
       "exchange": "PNK",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NTES",
@@ -3217,7 +3477,8 @@
       "industry": "Electronic Gaming & Multimedia",
       "exchange": "NMS",
       "ratio": "14:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NTRA",
@@ -3229,8 +3490,9 @@
       "tipo": "cedear",
       "industry": "Diagnostics & Research",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "51:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NU",
@@ -3242,8 +3504,9 @@
       "tipo": "cedear",
       "industry": "Banks—Regional",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NUE",
@@ -3255,8 +3518,9 @@
       "tipo": "cedear",
       "industry": "Steel",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "16:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NVDA",
@@ -3269,7 +3533,8 @@
       "industry": "Semiconductors",
       "exchange": "NMS",
       "ratio": "24:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NVO",
@@ -3281,8 +3546,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "7:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "NVS",
@@ -3295,7 +3561,8 @@
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "NXE",
@@ -3307,8 +3574,9 @@
       "tipo": "cedear",
       "industry": "Uranium",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "O",
@@ -3320,8 +3588,9 @@
       "tipo": "cedear",
       "industry": "REIT—Retail",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "13:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "OKLO",
@@ -3333,8 +3602,9 @@
       "tipo": "cedear",
       "industry": "Utilities—Independent Power Producers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "28:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ONDS",
@@ -3346,8 +3616,9 @@
       "tipo": "cedear",
       "industry": "Communication Equipment",
       "exchange": "NCM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ORCL",
@@ -3360,7 +3631,8 @@
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "ORLY",
@@ -3372,8 +3644,9 @@
       "tipo": "cedear",
       "industry": "Auto Parts",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "231:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "OXY",
@@ -3385,8 +3658,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas E&P",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PAAS",
@@ -3399,7 +3673,8 @@
       "industry": "Gold",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PAC",
@@ -3411,8 +3686,9 @@
       "tipo": "cedear",
       "industry": "Airports & Air Services",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "16:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PAGS",
@@ -3424,8 +3700,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PANW",
@@ -3437,8 +3714,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "50:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PATH",
@@ -3450,8 +3728,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PBI",
@@ -3464,7 +3743,8 @@
       "industry": "Integrated Freight & Logistics",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PBR",
@@ -3477,7 +3757,8 @@
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PCAR",
@@ -3490,7 +3771,8 @@
       "industry": "Farm & Heavy Construction Machinery",
       "exchange": "NMS",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PDD",
@@ -3502,8 +3784,9 @@
       "tipo": "cedear",
       "industry": "Internet Retail",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "25:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PEP",
@@ -3515,8 +3798,9 @@
       "tipo": "cedear",
       "industry": "Beverages—Non-Alcoholic",
       "exchange": "NMS",
-      "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PETR3.SA",
@@ -3529,7 +3813,8 @@
       "industry": "Oil & Gas Integrated",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "PFE",
@@ -3541,8 +3826,9 @@
       "tipo": "cedear",
       "industry": "Drug Manufacturers—General",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PG",
@@ -3554,8 +3840,9 @@
       "tipo": "cedear",
       "industry": "Household & Personal Products",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PHG",
@@ -3568,7 +3855,8 @@
       "industry": "Medical Devices",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PINS",
@@ -3580,8 +3868,9 @@
       "tipo": "cedear",
       "industry": "Internet Content & Information",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "7:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PKX",
@@ -3594,7 +3883,8 @@
       "industry": "Steel",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PLD",
@@ -3606,8 +3896,9 @@
       "tipo": "cedear",
       "industry": "REIT—Industrial",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "29:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PLTR",
@@ -3619,8 +3910,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PM",
@@ -3632,8 +3924,9 @@
       "tipo": "cedear",
       "industry": "Tobacco",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PRIO3.SA",
@@ -3646,20 +3939,8 @@
       "industry": "Oil & Gas E&P",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "PSO",
-      "ticker": "PSO",
-      "bymaTicker": "PSO",
-      "source": "byma-cedear",
-      "nombre": "Pearson plc",
-      "sector": "Comunicación",
-      "tipo": "cedear",
-      "industry": "Publishing",
-      "exchange": "NYQ",
-      "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "PSQ",
@@ -3671,8 +3952,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "PSX",
@@ -3685,7 +3967,8 @@
       "industry": "Oil & Gas Refining & Marketing",
       "exchange": "NYQ",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "PYPL",
@@ -3698,7 +3981,8 @@
       "industry": "Credit Services",
       "exchange": "NMS",
       "ratio": "8:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "QCOM",
@@ -3711,7 +3995,8 @@
       "industry": "Semiconductors",
       "exchange": "NMS",
       "ratio": "11:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "QQQ",
@@ -3723,8 +4008,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RACE",
@@ -3736,8 +4022,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "83:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RBLX",
@@ -3749,8 +4036,9 @@
       "tipo": "cedear",
       "industry": "Electronic Gaming & Multimedia",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RENT3.SA",
@@ -3763,7 +4051,8 @@
       "industry": "Rental & Leasing Services",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "RGTI",
@@ -3775,8 +4064,9 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NCM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RIO",
@@ -3788,8 +4078,9 @@
       "tipo": "cedear",
       "industry": "Other Industrial Metals & Mining",
       "exchange": "NYQ",
-      "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RIOT",
@@ -3801,8 +4092,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NCM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RKLB",
@@ -3814,8 +4106,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ROKU",
@@ -3827,8 +4120,9 @@
       "tipo": "cedear",
       "industry": "Entertainment",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "13:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ROST",
@@ -3841,7 +4135,8 @@
       "industry": "Apparel Retail",
       "exchange": "NMS",
       "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "RSP",
@@ -3853,8 +4148,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "30:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "RTX",
@@ -3867,7 +4163,8 @@
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SAN",
@@ -3880,7 +4177,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "1:4",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SAP",
@@ -3893,7 +4191,8 @@
       "industry": "Software—Application",
       "exchange": "NYQ",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SATL",
@@ -3905,8 +4204,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NCM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SBS",
@@ -3919,7 +4219,8 @@
       "industry": "Utilities—Regulated Water",
       "exchange": "NYQ",
       "ratio": "1:2",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SBSP3.SA",
@@ -3932,7 +4233,8 @@
       "industry": "Utilities—Regulated Water",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "SBUX",
@@ -3944,8 +4246,9 @@
       "tipo": "cedear",
       "industry": "Restaurants",
       "exchange": "NMS",
-      "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SCCO",
@@ -3958,7 +4261,8 @@
       "industry": "Copper",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SCHW",
@@ -3970,8 +4274,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "16:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SDA",
@@ -3983,8 +4288,9 @@
       "tipo": "cedear",
       "industry": "Auto & Truck Dealerships",
       "exchange": "NAS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SE",
@@ -3996,8 +4302,9 @@
       "tipo": "cedear",
       "industry": "Internet Retail",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "32:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SH",
@@ -4009,8 +4316,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SHEL",
@@ -4022,8 +4330,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SHOP",
@@ -4036,7 +4345,8 @@
       "industry": "Software—Application",
       "exchange": "NMS",
       "ratio": "107:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SHW",
@@ -4048,8 +4358,9 @@
       "tipo": "cedear",
       "industry": "Specialty Chemicals",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "69:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SID",
@@ -4062,7 +4373,8 @@
       "industry": "Steel",
       "exchange": "NYQ",
       "ratio": "1:8",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SIEGY",
@@ -4075,7 +4387,8 @@
       "industry": "Specialty Industrial Machinery",
       "exchange": "PNK",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SKHY",
@@ -4087,8 +4400,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "25:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SLB",
@@ -4101,7 +4415,8 @@
       "industry": "Oil & Gas Equipment & Services",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SLV",
@@ -4113,8 +4428,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "6:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SMH",
@@ -4126,21 +4442,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "SMSN.IL",
-      "ticker": "SMSN",
-      "bymaTicker": "SMSN",
-      "source": "byma-cedear",
-      "nombre": "Samsung Electronics Co., Ltd.",
-      "sector": "Tecnología",
-      "tipo": "cedear",
-      "industry": "Consumer Electronics",
-      "exchange": "IOB",
-      "ratio": "14:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "50:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SNA",
@@ -4153,7 +4457,8 @@
       "industry": "Tools & Accessories",
       "exchange": "NYQ",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SNAP",
@@ -4166,7 +4471,8 @@
       "industry": "Internet Content & Information",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SNDK",
@@ -4178,8 +4484,9 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "169:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SNOW",
@@ -4192,7 +4499,8 @@
       "industry": "Software—Application",
       "exchange": "NYQ",
       "ratio": "30:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SONY",
@@ -4204,8 +4512,23 @@
       "tipo": "cedear",
       "industry": "Consumer Electronics",
       "exchange": "NYQ",
-      "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
+    },
+    {
+      "symbol": "SOYB",
+      "ticker": "SOYB",
+      "bymaTicker": "SOYB",
+      "source": "byma-cedear",
+      "nombre": "Teucrium Soybean Fund",
+      "sector": "ETF",
+      "tipo": "etf",
+      "industry": null,
+      "exchange": "PCX",
+      "ratio": "5:1",
+      "checkedAt": "2026-10-19",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SPCE",
@@ -4217,8 +4540,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:2",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SPCX",
@@ -4230,8 +4554,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "50:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SPGI",
@@ -4243,8 +4568,9 @@
       "tipo": "cedear",
       "industry": "Financial Data & Stock Exchanges",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "45:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SPHQ",
@@ -4256,8 +4582,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "14:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SPOT",
@@ -4270,7 +4597,8 @@
       "industry": "Internet Content & Information",
       "exchange": "NYQ",
       "ratio": "28:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SPXL",
@@ -4282,8 +4610,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "25:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SPY",
@@ -4295,8 +4624,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "60:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "STLA",
@@ -4308,8 +4638,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "STNE",
@@ -4321,8 +4652,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SUZ",
@@ -4335,7 +4667,8 @@
       "industry": "Paper & Paper Products",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SUZB3.SA",
@@ -4348,7 +4681,8 @@
       "industry": "Paper & Paper Products",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "SWKS",
@@ -4360,8 +4694,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "21:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "SYY",
@@ -4373,8 +4708,9 @@
       "tipo": "cedear",
       "industry": "Food Distribution",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "8:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "T",
@@ -4387,7 +4723,8 @@
       "industry": "Telecom Services",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TCOM",
@@ -4400,7 +4737,8 @@
       "industry": "Travel Services",
       "exchange": "NMS",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TEAM",
@@ -4412,8 +4750,9 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "47:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TEM",
@@ -4425,8 +4764,9 @@
       "tipo": "cedear",
       "industry": "Health Information Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "12:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TGT",
@@ -4438,8 +4778,9 @@
       "tipo": "cedear",
       "industry": "Discount Stores",
       "exchange": "NYQ",
-      "ratio": "4:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "24:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TIMB",
@@ -4451,8 +4792,9 @@
       "tipo": "cedear",
       "industry": "Telecom Services",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "1:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TIMS3.SA",
@@ -4465,7 +4807,8 @@
       "industry": "Telecom Services",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "TJX",
@@ -4477,8 +4820,9 @@
       "tipo": "cedear",
       "industry": "Apparel Retail",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "22:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TLN",
@@ -4490,8 +4834,9 @@
       "tipo": "cedear",
       "industry": "Utilities—Independent Power Producers",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "63:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TM",
@@ -4503,8 +4848,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TMO",
@@ -4517,7 +4863,8 @@
       "industry": "Diagnostics & Research",
       "exchange": "NYQ",
       "ratio": "22:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TMUS",
@@ -4529,8 +4876,9 @@
       "tipo": "cedear",
       "industry": "Telecom Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "33:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TQQQ",
@@ -4542,8 +4890,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "NGM",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "25:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TRIP",
@@ -4556,7 +4905,8 @@
       "industry": "Travel Services",
       "exchange": "NMS",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TRV",
@@ -4569,7 +4919,8 @@
       "industry": "Insurance—Property & Casualty",
       "exchange": "NYQ",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TS",
@@ -4582,7 +4933,8 @@
       "industry": "Oil & Gas Equipment & Services",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TSLA",
@@ -4595,7 +4947,8 @@
       "industry": "Auto Manufacturers",
       "exchange": "NMS",
       "ratio": "15:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TSM",
@@ -4607,8 +4960,9 @@
       "tipo": "cedear",
       "industry": "Semiconductors",
       "exchange": "NYQ",
-      "ratio": "1:3",
-      "checkedAt": "2026-09-14"
+      "ratio": "9:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TTE",
@@ -4621,7 +4975,8 @@
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TV",
@@ -4634,7 +4989,8 @@
       "industry": "Telecom Services",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "TWLO",
@@ -4646,8 +5002,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "36:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TX",
@@ -4659,8 +5016,9 @@
       "tipo": "cedear",
       "industry": "Steel",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "TXN",
@@ -4673,7 +5031,8 @@
       "industry": "Semiconductors",
       "exchange": "NMS",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "UAL",
@@ -4685,8 +5044,9 @@
       "tipo": "cedear",
       "industry": "Airlines",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "UBER",
@@ -4698,8 +5058,9 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "UGP",
@@ -4712,7 +5073,8 @@
       "industry": "Oil & Gas Refining & Marketing",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "UL",
@@ -4725,7 +5087,8 @@
       "industry": "Household & Personal Products",
       "exchange": "NYQ",
       "ratio": "3:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "UNH",
@@ -4738,7 +5101,8 @@
       "industry": "Healthcare Plans",
       "exchange": "NYQ",
       "ratio": "33:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "UNP",
@@ -4751,7 +5115,8 @@
       "industry": "Railroads",
       "exchange": "NYQ",
       "ratio": "20:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "UPST",
@@ -4763,8 +5128,9 @@
       "tipo": "cedear",
       "industry": "Credit Services",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "URA",
@@ -4776,8 +5142,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "URBN",
@@ -4790,7 +5157,8 @@
       "industry": "Apparel Retail",
       "exchange": "NMS",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "USB",
@@ -4802,8 +5170,9 @@
       "tipo": "cedear",
       "industry": "Banks—Regional",
       "exchange": "NYQ",
-      "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "USO",
@@ -4815,8 +5184,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "V",
@@ -4828,8 +5198,9 @@
       "tipo": "cedear",
       "industry": "Credit Services",
       "exchange": "NYQ",
-      "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VALE",
@@ -4842,7 +5213,8 @@
       "industry": "Other Industrial Metals & Mining",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "VALE3.SA",
@@ -4855,7 +5227,8 @@
       "industry": "Other Industrial Metals & Mining",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "VEA",
@@ -4867,8 +5240,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VIG",
@@ -4880,8 +5254,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "39:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VIST",
@@ -4893,8 +5268,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas E&P",
       "exchange": "NYQ",
-      "ratio": "1:5",
-      "checkedAt": "2026-09-14"
+      "ratio": "3:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VIV",
@@ -4907,7 +5283,8 @@
       "industry": "Telecom Services",
       "exchange": "NYQ",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "VIVT3.SA",
@@ -4920,7 +5297,8 @@
       "industry": "Telecom Services",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "VOD",
@@ -4933,7 +5311,8 @@
       "industry": "Telecom Services",
       "exchange": "NMS",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "VRSN",
@@ -4946,7 +5325,8 @@
       "industry": "Software—Infrastructure",
       "exchange": "NMS",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "VRTX",
@@ -4958,8 +5338,9 @@
       "tipo": "cedear",
       "industry": "Biotechnology",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "101:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VST",
@@ -4971,8 +5352,9 @@
       "tipo": "cedear",
       "industry": "Utilities—Independent Power Producers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "26:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VXX",
@@ -4984,8 +5366,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "BTS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "5:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "VZ",
@@ -4997,8 +5380,9 @@
       "tipo": "cedear",
       "industry": "Telecom Services",
       "exchange": "NYQ",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "WB",
@@ -5011,7 +5395,8 @@
       "industry": "Internet Content & Information",
       "exchange": "NMS",
       "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "WDC",
@@ -5023,8 +5408,9 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "91:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "WEGE3.SA",
@@ -5037,7 +5423,8 @@
       "industry": "Electrical Equipment & Parts",
       "exchange": "SAO",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": null
     },
     {
       "symbol": "WELL",
@@ -5049,8 +5436,9 @@
       "tipo": "cedear",
       "industry": "REIT—Healthcare Facilities",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "48:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "WFC",
@@ -5063,7 +5451,8 @@
       "industry": "Banks—Diversified",
       "exchange": "NYQ",
       "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "WMT",
@@ -5075,8 +5464,9 @@
       "tipo": "cedear",
       "industry": "Discount Stores",
       "exchange": "NMS",
-      "ratio": "6:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLB",
@@ -5088,8 +5478,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "18:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLC",
@@ -5101,8 +5492,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "19:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLE",
@@ -5114,8 +5506,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLF",
@@ -5127,8 +5520,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "2:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLI",
@@ -5140,8 +5534,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "28:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLK",
@@ -5153,8 +5548,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "46:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLP",
@@ -5166,8 +5562,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "16:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLRE",
@@ -5179,8 +5576,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "9:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLU",
@@ -5192,8 +5590,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "15:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLV",
@@ -5205,8 +5604,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "29:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XLY",
@@ -5218,8 +5618,9 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "43:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XME",
@@ -5231,8 +5632,9 @@
       "tipo": "etf",
       "industry": null,
       "exchange": "PCX",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "30:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XOM",
@@ -5244,8 +5646,9 @@
       "tipo": "cedear",
       "industry": "Oil & Gas Integrated",
       "exchange": "NYQ",
-      "ratio": "5:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "10:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XP",
@@ -5257,8 +5660,9 @@
       "tipo": "cedear",
       "industry": "Capital Markets",
       "exchange": "NMS",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XPEV",
@@ -5270,8 +5674,9 @@
       "tipo": "cedear",
       "industry": "Auto Manufacturers",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "4:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "XRX",
@@ -5284,7 +5689,8 @@
       "industry": "Business Equipment & Supplies",
       "exchange": "NMS",
       "ratio": "1:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "XYZ",
@@ -5296,8 +5702,9 @@
       "tipo": "cedear",
       "industry": "Software—Infrastructure",
       "exchange": "NYQ",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "ratio": "20:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "YELP",
@@ -5310,7 +5717,8 @@
       "industry": "Internet Content & Information",
       "exchange": "NYQ",
       "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "YZCAY",
@@ -5322,8 +5730,9 @@
       "tipo": "cedear",
       "industry": "Thermal Coal",
       "exchange": "OQX",
-      "ratio": "2:1",
-      "checkedAt": "2026-09-14"
+      "ratio": "2401291:1",
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "precio"
     },
     {
       "symbol": "ZM",
@@ -5336,7 +5745,8 @@
       "industry": "Software—Application",
       "exchange": "NMS",
       "ratio": "47:1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-14",
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "A3.BA",
@@ -5885,6 +6295,19 @@
       "checkedAt": "2026-09-14"
     },
     {
+      "symbol": "INVJX.BA",
+      "ticker": "INVJX",
+      "bymaTicker": "INVJX",
+      "source": "byma-equity",
+      "nombre": "INVERSORA JURAMENTO SA",
+      "sector": "Argentina",
+      "tipo": "accion",
+      "industry": null,
+      "exchange": "BUE",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
       "symbol": "IRS",
       "ticker": "IRSA",
       "bymaTicker": "IRSA",
@@ -6065,6 +6488,19 @@
       "exchange": "BUE",
       "ratio": null,
       "checkedAt": "2026-09-14"
+    },
+    {
+      "symbol": "REGE.BA",
+      "ticker": "REGE",
+      "bymaTicker": "REGE",
+      "source": "byma-equity",
+      "nombre": "García Reguera Sociedad Anónima Comercial, Industrial, Financiera e Inmobiliaria",
+      "sector": "Argentina",
+      "tipo": "accion",
+      "industry": "Department Stores",
+      "exchange": "BUE",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "REIT.BA",
@@ -6259,7 +6695,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "ETH-USD",
@@ -6272,7 +6708,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "BNB-USD",
@@ -6285,7 +6721,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "XRP-USD",
@@ -6298,7 +6734,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "SOL-USD",
@@ -6311,7 +6747,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "TRX-USD",
@@ -6324,7 +6760,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "HYPE32196-USD",
@@ -6337,7 +6773,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "ZEC-USD",
@@ -6350,7 +6786,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "DOGE-USD",
@@ -6363,20 +6799,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "RAIN38341-USD",
-      "ticker": "RAIN",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Rain",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "XMR-USD",
@@ -6389,7 +6812,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "LINK-USD",
@@ -6402,7 +6825,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "LEO-USD",
@@ -6415,7 +6838,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "ADA-USD",
@@ -6428,137 +6851,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "XLM-USD",
-      "ticker": "XLM",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Stellar",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "DEL-USD",
-      "ticker": "DEL",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Decimal",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "BCH-USD",
-      "ticker": "BCH",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Bitcoin Cash",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "TON11419-USD",
-      "ticker": "TON",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Toncoin",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "LTC-USD",
-      "ticker": "LTC",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Litecoin",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "UNI7083-USD",
-      "ticker": "UNI",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Uniswap",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "CC37263-USD",
-      "ticker": "CC",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Canton",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "GRAM-USD",
-      "ticker": "GRAM",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Gram (prev. Toncoin)",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "HBAR-USD",
-      "ticker": "HBAR",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Hedera",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "AVAX-USD",
-      "ticker": "AVAX",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Avalanche",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "NEAR-USD",
@@ -6571,7 +6864,150 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "RAIN38341-USD",
+      "ticker": "RAIN",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Rain",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "XLM-USD",
+      "ticker": "XLM",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Stellar",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "BTW39158-USD",
+      "ticker": "BTW",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Bitway",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "BCH-USD",
+      "ticker": "BCH",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Bitcoin Cash",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "DEL-USD",
+      "ticker": "DEL",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Decimal",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "LTC-USD",
+      "ticker": "LTC",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Litecoin",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "UNI7083-USD",
+      "ticker": "UNI",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Uniswap",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "TON11419-USD",
+      "ticker": "TON",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Toncoin",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "AVAX-USD",
+      "ticker": "AVAX",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Avalanche",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "CC37263-USD",
+      "ticker": "CC",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Canton",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "symbol": "SUI20947-USD",
+      "ticker": "SUI",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Sui",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "^DJI",
@@ -6584,7 +7020,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "^MERV",
@@ -6597,7 +7033,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "^NDX",
@@ -6610,7 +7046,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "^RUT",
@@ -6623,7 +7059,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "^GSPC",
@@ -6636,99 +7072,79 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     }
   ],
   "unresolved": [
     {
       "source": "byma-cedear",
       "bymaTicker": "BPA11",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-cedear",
       "bymaTicker": "DJN3B",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-cedear",
       "bymaTicker": "DJNJ3",
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "source": "byma-cedear",
-      "bymaTicker": "DTEA",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-cedear",
       "bymaTicker": "GOGLB",
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "source": "byma-cedear",
-      "bymaTicker": "NEC1",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "ATGS",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "CECOB",
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "source": "byma-equity",
-      "bymaTicker": "CRECB",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "COUR",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
+    },
+    {
+      "source": "byma-equity",
+      "bymaTicker": "CRECB",
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "DGCUB",
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "source": "byma-equity",
-      "bymaTicker": "EDLH",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "MELFB",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "PNZFB",
-      "checkedAt": "2026-09-14"
-    },
-    {
-      "source": "byma-equity",
-      "bymaTicker": "REGE",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "TECOB",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "TGN4B",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "TGSUB",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-10-19"
     }
   ]
 }

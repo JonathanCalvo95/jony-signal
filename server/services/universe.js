@@ -1,6 +1,6 @@
-import { fetchCedearSymbols, fetchArgentinaSymbols, altSeriesCandidates } from './byma.js';
+import { fetchCedears, fetchArgentina, altSeriesCandidates } from './byma.js';
 import { fetchComafiPrograms, toYahooSymbols } from './comafi.js';
-import { searchSymbol, fetchCryptoRanking } from './yahoo.js';
+import { searchSymbol, fetchCryptoRanking, fetchQuotes } from './yahoo.js';
 import { readOverrides, readUniverseFile, writeUniverseFile } from './store.js';
 
 // Universo automático de papeles. Nada se carga a mano:
@@ -73,6 +73,37 @@ export function pickCrypto(ranking, top = CRYPTO_TOP) {
   return ranking.filter((c) => c.symbol?.endsWith('-USD') && !isStableOrWrapped(c)).slice(0, top);
 }
 
+/** "9:1" → 9 CEDEARs por acción · "1:5" → 0,2 (un CEDEAR son 5 acciones). */
+export function parseRatio(s) {
+  const m = /^\s*(\d+(?:[.,]\d+)?)\s*:\s*(\d+(?:[.,]\d+)?)\s*$/.exec(s ?? '');
+  if (!m) return null;
+  const [a, b] = [m[1], m[2]].map((x) => Number(x.replace(',', '.')));
+  return a > 0 && b > 0 ? a / b : null;
+}
+
+export function formatRatio(r) {
+  return r >= 1 ? `${Math.round(r)}:1` : `1:${Math.round(1 / r)}`;
+}
+
+/** CEDEARs por acción según el precio: la acción en dólares por el CCL, sobre el CEDEAR en pesos. */
+export function estimateRatio(usPrice, arsPrice, ccl) {
+  return usPrice > 0 && arsPrice > 0 && ccl > 0 ? usPrice * ccl / arsPrice : null;
+}
+
+const RATIO_TOLERANCE = 0.05;
+
+/**
+ * Ratio del CEDEAR: el de Comafi si el precio lo confirma; si no, el que sale del precio. La tabla de
+ * Comafi tiene ratios viejos (el 19/10/2026 decía TSM 1:3 y AAPL 10:1; por precio daban 9 y 20) y
+ * solo cubre sus ~256 programas.
+ */
+export function resolveRatio(comafi, estimate) {
+  const c = parseRatio(comafi);
+  if (!(estimate > 0)) return { ratio: comafi ?? null, ratioFuente: comafi ? 'comafi' : null };
+  if (c && Math.abs(c / estimate - 1) <= RATIO_TOLERANCE) return { ratio: comafi, ratioFuente: 'comafi' };
+  return { ratio: formatRatio(estimate), ratioFuente: 'precio' };
+}
+
 const today = () => new Date().toISOString().slice(0, 10);
 const daysSince = (iso) => iso ? (Date.now() - Date.parse(iso)) / 86_400_000 : Infinity;
 
@@ -109,6 +140,33 @@ async function resolveCandidates(candidates, bare) {
   return { hit: null, failed };
 }
 
+/**
+ * Ratio de cada CEDEAR con el cierre anterior de los dos lados (BYMA y EE.UU. cierran casi juntos) y el
+ * CCL de GGAL (10 acciones por ADR). Solo para subyacentes que cotizan en dólares en EE.UU. (sin sufijo
+ * de bolsa); el resto queda con lo que diga Comafi. Si Yahoo no responde, cada papel conserva su ratio.
+ */
+async function applyRatios(entries, { closes, comafi, ggalArs, log }) {
+  const cedears = entries.filter((e) => (e.tipo === 'cedear' || e.tipo === 'etf') && e.bymaTicker);
+  const enDolares = cedears.filter((e) => !e.symbol.includes('.')).map((e) => e.symbol);
+  let quotes = new Map();
+  try {
+    quotes = await fetchQuotes([...new Set([...enDolares, 'GGAL'])]);
+  } catch (e) {
+    log(`Ratios: Yahoo no disponible (${e.message}); cada papel conserva el que tenía`);
+  }
+  const ggalUs = quotes.get('GGAL')?.prevClose;
+  const ccl = ggalArs && ggalUs ? ggalArs * 10 / ggalUs : null;
+  let porPrecio = 0, corregidos = 0;
+  for (const e of cedears) {
+    const est = ccl && !e.symbol.includes('.') ? estimateRatio(quotes.get(e.symbol)?.prevClose, closes.get(e.bymaTicker), ccl) : null;
+    if (est == null && e.ratioFuente === 'precio') { porPrecio++; continue; }
+    const program = comafi.get(e.bymaTicker)?.ratio ?? null;
+    Object.assign(e, resolveRatio(program, est));
+    if (e.ratioFuente === 'precio') { porPrecio++; if (program) corregidos++; }
+  }
+  log(`Ratios: CCL ${ccl ? ccl.toFixed(0) : 's/d'} · ${porPrecio} por precio (${corregidos} contra Comafi)`);
+}
+
 function applyOverride(entry, override) {
   if (!override) return entry;
   return {
@@ -130,9 +188,9 @@ export async function buildUniverse({ previous = null, log = () => {} } = {}) {
   const known = new Map((previous?.entries ?? []).filter((e) => e.source).map((e) => [`${e.source}:${e.bymaTicker}`, e]));
   const failed = new Map((previous?.unresolved ?? []).map((u) => [`${u.source}:${u.bymaTicker}`, u]));
 
-  const [allCedears, allArgentina, comafi, ranking] = await Promise.all([
-    fetchCedearSymbols(),
-    fetchArgentinaSymbols(),
+  const [{ symbols: allCedears, closes: cedearCloses }, { symbols: allArgentina, closes: argentinaCloses }, comafi, ranking] = await Promise.all([
+    fetchCedears(),
+    fetchArgentina(),
     fetchComafiPrograms().catch((e) => { log(`Comafi no disponible: ${e.message}`); return new Map(); }),
     fetchCryptoRanking(80).catch((e) => { log(`Ranking cripto no disponible: ${e.message}`); return []; }),
   ]);
@@ -200,6 +258,7 @@ export async function buildUniverse({ previous = null, log = () => {} } = {}) {
     }, override));
   });
   if (searched) log(`Yahoo: ${searched} símbolos consultados, ${unresolved.length} sin resolver`);
+  await applyRatios(entries, { closes: cedearCloses, comafi, ggalArs: argentinaCloses.get('GGAL'), log });
 
   // Cripto: top por capitalización, símbolos ya en formato Yahoo
   for (const c of pickCrypto(ranking)) {

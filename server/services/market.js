@@ -132,7 +132,7 @@ function buildRow(sym) {
   const cat = getEntry(sym) ?? {};
   const base = {
     symbol: sym, ticker: cat.ticker ?? sym, nombre: cat.nombre ?? null, sector: cat.sector ?? null, tipo: cat.tipo ?? null,
-    bymaTicker: cat.bymaTicker ?? null, ratio: cat.ratio ?? null,
+    bymaTicker: cat.bymaTicker ?? null, ratio: cat.ratio ?? null, ratioFuente: cat.ratioFuente ?? null,
   };
   const q = quotes.get(sym), h = histories.get(sym);
   const fail = failures.get(sym);

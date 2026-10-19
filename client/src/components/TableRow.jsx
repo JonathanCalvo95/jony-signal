@@ -18,7 +18,7 @@ function TableRow({ row, band }) {
     row.nombre,
     row.tipo && TIPO_LABEL[row.tipo],
     row.bymaTicker && row.bymaTicker !== row.ticker ? `BYMA: ${row.bymaTicker}` : null,
-    row.ratio ? `ratio ${row.ratio}` : null,
+    row.ratio ? (row.ratioFuente === 'precio' ? `ratio ≈${row.ratio} (por precio)` : `ratio ${row.ratio}`) : null,
     row.symbol !== row.ticker ? `Yahoo: ${row.symbol}` : null,
   ].filter(Boolean).join(' · ');
 
