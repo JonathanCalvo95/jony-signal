@@ -32,7 +32,7 @@ function TableRow({ row, band }) {
       </td>
 
       <td className="cell-signal" style={{ background: sig ? sig.bg : undefined }}>
-        {sig ? sig.label : <span className="muted">{row.error ? 'sin datos' : '…'}</span>}
+        {sig ? sig.label : <span className="muted">{row.error ? 'sin datos' : row.pending ? '…' : 'sin rango'}</span>}
       </td>
 
       <NumCell value={row.price} format={fmtPrice} />

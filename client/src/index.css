@@ -70,6 +70,9 @@ body {
 .sheet tr.row.is-pending td:not(.cell-ticker) { color: var(--text-faint); }
 
 /* ── Controles ──────────────────────────────────────────────────────────── */
+/* En la capa de componentes para que las utilidades de Tailwind (pl-8, pr-7) les ganen: sueltos,
+   el padding de .input pisaba el pl-8 y la lupa quedaba encima del placeholder. */
+@layer components {
 .btn { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; border: 1px solid var(--grid-strong); background: var(--paper); color: var(--text); transition: background 0.12s, border-color 0.12s, box-shadow 0.12s; }
 .btn:hover { background: var(--hover); border-color: #9aa8bb; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
@@ -87,6 +90,7 @@ body {
 .pill:hover { border-color: var(--grid-strong); color: var(--text); }
 .pill.is-active { color: #111; font-weight: 700; border-color: transparent; box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
 .pill .count { font-size: 12px; opacity: 0.75; font-variant-numeric: tabular-nums; }
+}
 
 /* Indicador LIVE */
 @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
