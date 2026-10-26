@@ -12,9 +12,10 @@ import * as market from './services/market.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const isProd = process.env.NODE_ENV === 'production';
-// En producción el puerto lo impone la plataforma (Render); en desarrollo va fijo en 3001
-// porque el proxy de Vite apunta ahí (SERVER_PORT permite cambiarlo).
-const PORT = isProd ? (process.env.PORT || 3001) : (process.env.SERVER_PORT || 3001);
+// En producción el puerto lo impone la plataforma (Render); en desarrollo va fijo en 3011
+// porque el proxy de Vite apunta ahí (SERVER_PORT permite cambiarlo). No 3001: es el de
+// portfolio-web-app y los dos corren a la vez.
+const PORT = isProd ? (process.env.PORT || 3001) : (process.env.SERVER_PORT || 3011);
 
 app.use(cors({
   origin: isProd ? true : ['http://localhost:5173', 'http://127.0.0.1:5173'],

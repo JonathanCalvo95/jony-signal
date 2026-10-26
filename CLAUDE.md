@@ -10,7 +10,7 @@ BYMA, el top de cripto por capitalización y los índices de referencia. No se c
 
 ```bash
 npm run install:all      # deps de server + client
-npm run dev              # server :3001 + client :5173 (proxy /api y /ws → 3001)
+npm run dev              # server :3011 + client :5180 (proxy /api y /ws → 3011; 5173/3001 son de portfolio-web-app)
 npm test                 # tests del server (fórmulas contra la planilla, universo, fechas)
 npm run build            # build de producción del client (Render corre esto y después `npm start`)
 
@@ -173,7 +173,7 @@ jony-signal/
 ## Convenciones
 
 - UI en español rioplatense; números con coma decimal y sin separador de miles, como la planilla.
-- En desarrollo el server escucha fijo en 3001 (`SERVER_PORT` para cambiarlo); `PORT` solo se respeta en producción.
+- En desarrollo el server escucha fijo en 3011 (`SERVER_PORT` para cambiarlo); `PORT` solo se respeta en producción.
 - Los sectores de `tickers-ar.json` son criterio del dueño (IREN en Cripto, RGTI en IA & Innovación…); no reclasificar. Lo que no está ahí se clasifica solo.
 - Nunca volver a un listado manual de papeles: si falta algo, se arregla la fuente o el mapeo, no se agrega a mano.
 - Errores HTTP: 400 validación, 404 símbolo inexistente en Yahoo.
