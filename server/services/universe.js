@@ -115,15 +115,25 @@ async function runPool(items, concurrency, fn) {
 }
 
 const FOREIGN_SUFFIXES = /\.(DE|L|IL|AS|PA|MC|MI|TO|SA|HK|T)$/;
+const FUND_NAME = /\b(ETF|FUND|TRUST|SPDR|ISHARES|INDEX)\b/i;
 
 /**
- * Prueba candidatos en orden y devuelve el primero que Yahoo conoce como acción o ETF. Si ninguno
- * coincide exacto, acepta el mismo ticker en otra bolsa (ADS → ADS.DE, IWDA → IWDA.L).
+ * Comafi lista programas de empresas: si el papel figura ahí, Yahoo tiene que dar una acción. Un ETF
+ * es un ticker reciclado: FB es el programa viejo de Facebook (hoy META) y en Yahoo FB es un ETF de
+ * ProShares que salía en la tabla como si fuera el CEDEAR.
+ */
+export function programAllowsEtf(program) {
+  return !program || FUND_NAME.test(program.name ?? '');
+}
+
+/**
+ * Prueba candidatos en orden y devuelve el primero que Yahoo conoce como acción (o ETF, si se permite).
+ * Si ninguno coincide exacto, acepta el mismo ticker en otra bolsa (ADS → ADS.DE, IWDA → IWDA.L).
  * @returns {Promise<{hit: object|null, failed: boolean}>} failed = hubo errores de red (no concluye nada)
  */
-async function resolveCandidates(candidates, bare) {
+async function resolveCandidates(candidates, bare, { allowEtf = true } = {}) {
   let failed = false;
-  const isListed = (h) => h.quoteType === 'EQUITY' || h.quoteType === 'ETF';
+  const isListed = (h) => h.quoteType === 'EQUITY' || (allowEtf && h.quoteType === 'ETF');
   for (const c of [...new Set(candidates.filter(Boolean))]) {
     try {
       const hit = (await searchSymbol(c)).find(isListed);
@@ -194,6 +204,10 @@ export async function buildUniverse({ previous = null, log = () => {} } = {}) {
     fetchComafiPrograms().catch((e) => { log(`Comafi no disponible: ${e.message}`); return new Map(); }),
     fetchCryptoRanking(80).catch((e) => { log(`Ranking cripto no disponible: ${e.message}`); return []; }),
   ]);
+  // Fuera de horario (el sábado 24/10/2026) BYMA devuelve el catálogo entero en cero: 687 CEDEARs en vez
+  // de ~430, con programas muertos (FB, TWTR, YHOO, TOT) que Yahoo resuelve a cualquier cosa. Sin
+  // precios no se rearma: el que llama se queda con el universo anterior.
+  if (!cedearCloses.size) throw new Error('BYMA sin precios (fuera de horario); se mantiene el universo anterior');
   // Series alternativas (AAPLB, AMD.B, ALUAB...) afuera, salvo que Comafi las liste como programa real (BB)
   const altCedears = altSeriesCandidates(allCedears), altArgentina = altSeriesCandidates(allArgentina);
   const cedears = allCedears.filter((s) => !altCedears.has(s) || comafi.has(s));
@@ -214,7 +228,8 @@ export async function buildUniverse({ previous = null, log = () => {} } = {}) {
   const consider = (source, bymaTicker) => {
     const key = `${source}:${bymaTicker}`;
     const prev = known.get(key);
-    if (prev) { push(applyOverride({ ...prev }, overrides.get(bymaTicker))); return; }
+    const stale = prev?.tipo === 'etf' && !programAllowsEtf(comafi.get(bymaTicker));   // resuelto antes de la regla
+    if (prev && !stale) { push(applyOverride({ ...prev }, overrides.get(bymaTicker))); return; }
     const fail = failed.get(key);
     if (fail && daysSince(fail.checkedAt) < RETRY_DAYS) { unresolved.push(fail); return; }
     todo.push({ source, bymaTicker });
@@ -237,7 +252,7 @@ export async function buildUniverse({ previous = null, log = () => {} } = {}) {
           bymaTicker.replace(/\.([A-Z])$/, '-$1'),
         ];
     searched++;
-    const { hit, failed: netError } = await resolveCandidates(candidates, local ? null : bymaTicker);
+    const { hit, failed: netError } = await resolveCandidates(candidates, local ? null : bymaTicker, { allowEtf: programAllowsEtf(program) });
     if (!hit || (local && /(fund|fci|fideicomiso)/i.test(hit.name ?? ''))) {   // fondos cerrados del panel general
       if (!netError) unresolved.push({ source, bymaTicker, checkedAt: today() });   // con error de red se reintenta mañana
       return;

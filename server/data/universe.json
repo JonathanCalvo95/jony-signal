@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-19T18:45:54.596Z",
+  "updatedAt": "2026-10-26T19:11:18.107Z",
   "sources": {
     "cedears": 410,
     "argentina": 72,
     "cripto": 25,
     "indices": 5,
-    "unresolved": 14
+    "unresolved": 16
   },
   "entries": [
     {
@@ -130,7 +130,7 @@
       "tipo": "cedear",
       "industry": "Information Technology Services",
       "exchange": "NYQ",
-      "ratio": "75:1",
+      "ratio": "76:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -452,7 +452,7 @@
       "tipo": "cedear",
       "industry": "Semiconductor Equipment & Materials",
       "exchange": "NMS",
-      "ratio": "145:1",
+      "ratio": "146:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -802,7 +802,7 @@
       "tipo": "cedear",
       "industry": "Travel Services",
       "exchange": "NMS",
-      "ratio": "681:1",
+      "ratio": "687:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -1348,7 +1348,7 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NYQ",
-      "ratio": "73:1",
+      "ratio": "74:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -1714,7 +1714,7 @@
       "exchange": "OQB",
       "ratio": "1:1",
       "checkedAt": "2026-09-14",
-      "ratioFuente": "precio"
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "FMX",
@@ -1742,7 +1742,7 @@
       "exchange": "OQB",
       "ratio": "1:1",
       "checkedAt": "2026-09-14",
-      "ratioFuente": "precio"
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "FSLR",
@@ -2258,9 +2258,9 @@
       "tipo": "cedear",
       "industry": "Aerospace & Defense",
       "exchange": "NYQ",
-      "ratio": "1:1",
+      "ratio": "52:1",
       "checkedAt": "2026-09-14",
-      "ratioFuente": "comafi"
+      "ratioFuente": "precio"
     },
     {
       "symbol": "IBB",
@@ -2496,7 +2496,7 @@
       "tipo": "cedear",
       "industry": "Medical Instruments & Supplies",
       "exchange": "NMS",
-      "ratio": "92:1",
+      "ratio": "91:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -2566,7 +2566,7 @@
       "tipo": "cedear",
       "industry": null,
       "exchange": "PCX",
-      "ratio": "688:1",
+      "ratio": "691:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -3028,7 +3028,7 @@
       "tipo": "cedear",
       "industry": "Internet Retail",
       "exchange": "NMS",
-      "ratio": "119:1",
+      "ratio": "120:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -3448,7 +3448,7 @@
       "tipo": "cedear",
       "industry": "Software—Application",
       "exchange": "NYQ",
-      "ratio": "171:1",
+      "ratio": "173:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -3644,7 +3644,7 @@
       "tipo": "cedear",
       "industry": "Auto Parts",
       "exchange": "NMS",
-      "ratio": "231:1",
+      "ratio": "230:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -4388,7 +4388,7 @@
       "exchange": "PNK",
       "ratio": "3:1",
       "checkedAt": "2026-09-14",
-      "ratioFuente": "precio"
+      "ratioFuente": "comafi"
     },
     {
       "symbol": "SKHY",
@@ -4484,7 +4484,7 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NMS",
-      "ratio": "169:1",
+      "ratio": "170:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -5408,7 +5408,7 @@
       "tipo": "cedear",
       "industry": "Computer Hardware",
       "exchange": "NMS",
-      "ratio": "91:1",
+      "ratio": "92:1",
       "checkedAt": "2026-09-14",
       "ratioFuente": "precio"
     },
@@ -6243,6 +6243,19 @@
       "checkedAt": "2026-09-14"
     },
     {
+      "symbol": "HSIM.BA",
+      "ticker": "HSIM",
+      "bymaTicker": "HSIM",
+      "source": "byma-equity",
+      "nombre": "BALANZ Mutual Investment Fund M",
+      "sector": "Argentina",
+      "tipo": "accion",
+      "industry": null,
+      "exchange": "BUE",
+      "ratio": null,
+      "checkedAt": "2026-10-26"
+    },
+    {
       "symbol": "IEB.BA",
       "ticker": "IEB",
       "bymaTicker": "IEB",
@@ -6293,19 +6306,6 @@
       "exchange": "BUE",
       "ratio": null,
       "checkedAt": "2026-09-14"
-    },
-    {
-      "symbol": "INVJX.BA",
-      "ticker": "INVJX",
-      "bymaTicker": "INVJX",
-      "source": "byma-equity",
-      "nombre": "INVERSORA JURAMENTO SA",
-      "sector": "Argentina",
-      "tipo": "accion",
-      "industry": null,
-      "exchange": "BUE",
-      "ratio": null,
-      "checkedAt": "2026-10-19"
     },
     {
       "symbol": "IRS",
@@ -6695,7 +6695,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "ETH-USD",
@@ -6708,7 +6708,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "BNB-USD",
@@ -6721,7 +6721,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "XRP-USD",
@@ -6734,7 +6734,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "SOL-USD",
@@ -6747,7 +6747,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "TRX-USD",
@@ -6760,20 +6760,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "symbol": "HYPE32196-USD",
-      "ticker": "HYPE",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Hyperliquid",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "ZEC-USD",
@@ -6786,7 +6773,20 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "symbol": "HYPE32196-USD",
+      "ticker": "HYPE",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Hyperliquid",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "DOGE-USD",
@@ -6799,7 +6799,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "XMR-USD",
@@ -6812,7 +6812,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "LINK-USD",
@@ -6825,7 +6825,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "LEO-USD",
@@ -6838,7 +6838,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "ADA-USD",
@@ -6851,33 +6851,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "symbol": "NEAR-USD",
-      "ticker": "NEAR",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "NEAR Protocol",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "symbol": "RAIN38341-USD",
-      "ticker": "RAIN",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Rain",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "XLM-USD",
@@ -6890,20 +6864,20 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
-      "symbol": "BTW39158-USD",
-      "ticker": "BTW",
+      "symbol": "NEAR-USD",
+      "ticker": "NEAR",
       "bymaTicker": null,
       "source": "yahoo-crypto",
-      "nombre": "Bitway",
+      "nombre": "NEAR Protocol",
       "sector": "Cripto",
       "tipo": "cripto",
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "BCH-USD",
@@ -6916,7 +6890,20 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "symbol": "RAIN38341-USD",
+      "ticker": "RAIN",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Rain",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "DEL-USD",
@@ -6929,33 +6916,7 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "symbol": "LTC-USD",
-      "ticker": "LTC",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Litecoin",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "symbol": "UNI7083-USD",
-      "ticker": "UNI",
-      "bymaTicker": null,
-      "source": "yahoo-crypto",
-      "nombre": "Uniswap",
-      "sector": "Cripto",
-      "tipo": "cripto",
-      "industry": null,
-      "exchange": "CCC",
-      "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "TON11419-USD",
@@ -6968,20 +6929,33 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
-      "symbol": "AVAX-USD",
-      "ticker": "AVAX",
+      "symbol": "UNI7083-USD",
+      "ticker": "UNI",
       "bymaTicker": null,
       "source": "yahoo-crypto",
-      "nombre": "Avalanche",
+      "nombre": "Uniswap",
       "sector": "Cripto",
       "tipo": "cripto",
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "symbol": "LTC-USD",
+      "ticker": "LTC",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Litecoin",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "CC37263-USD",
@@ -6994,7 +6968,20 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "symbol": "AVAX-USD",
+      "ticker": "AVAX",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Avalanche",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "SUI20947-USD",
@@ -7007,7 +6994,20 @@
       "industry": null,
       "exchange": "CCC",
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "symbol": "GRAM-USD",
+      "ticker": "GRAM",
+      "bymaTicker": null,
+      "source": "yahoo-crypto",
+      "nombre": "Gram (prev. Toncoin)",
+      "sector": "Cripto",
+      "tipo": "cripto",
+      "industry": null,
+      "exchange": "CCC",
+      "ratio": null,
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "^DJI",
@@ -7020,7 +7020,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "^MERV",
@@ -7033,7 +7033,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "^NDX",
@@ -7046,7 +7046,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "^RUT",
@@ -7059,7 +7059,7 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "symbol": "^GSPC",
@@ -7072,79 +7072,89 @@
       "industry": null,
       "exchange": null,
       "ratio": null,
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     }
   ],
   "unresolved": [
     {
       "source": "byma-cedear",
-      "bymaTicker": "BPA11",
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "source": "byma-cedear",
       "bymaTicker": "DJN3B",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-cedear",
-      "bymaTicker": "DJNJ3",
-      "checkedAt": "2026-10-19"
+      "bymaTicker": "BPA11",
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-cedear",
       "bymaTicker": "GOGLB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "ATGS",
-      "checkedAt": "2026-10-19"
-    },
-    {
-      "source": "byma-equity",
-      "bymaTicker": "CECOB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "COUR",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
-      "source": "byma-equity",
-      "bymaTicker": "CRECB",
-      "checkedAt": "2026-10-19"
+      "source": "byma-cedear",
+      "bymaTicker": "DJNJ3",
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "DGCUB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "source": "byma-equity",
+      "bymaTicker": "CECOB",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "source": "byma-equity",
+      "bymaTicker": "CRECB",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "source": "byma-equity",
+      "bymaTicker": "EDLH",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "source": "byma-equity",
+      "bymaTicker": "PATR",
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "MELFB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "PNZFB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "TECOB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "TGN4B",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     },
     {
       "source": "byma-equity",
       "bymaTicker": "TGSUB",
-      "checkedAt": "2026-10-19"
+      "checkedAt": "2026-10-26"
     }
   ]
 }

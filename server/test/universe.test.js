@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { baseSymbols, altSeriesCandidates, arsCloses } from '../services/byma.js';
 import { parseComafiTable, toYahooSymbols } from '../services/comafi.js';
-import { displayTicker, isStableOrWrapped, pickCrypto, sectorFor, parseRatio, formatRatio, estimateRatio, resolveRatio } from '../services/universe.js';
+import { displayTicker, isStableOrWrapped, pickCrypto, sectorFor, parseRatio, formatRatio, estimateRatio, resolveRatio, programAllowsEtf } from '../services/universe.js';
 
 test('BYMA: cierre anterior en pesos, plazo 24 hs primero', () => {
   const rows = [
@@ -90,4 +90,10 @@ test('universo: ticker visible, sectores y filtro de cripto', () => {
   assert.deepEqual(pickCrypto(ranking, 3).map((c) => c.symbol), ['BTC-USD', 'ETH-USD', 'HYPE32196-USD']);
   assert.ok(isStableOrWrapped({ symbol: 'USDE29470-USD', name: 'Ethena USDe USD' }));
   assert.ok(!isStableOrWrapped({ symbol: 'XRP-USD', name: 'XRP USD' }));
+});
+
+test('Comafi: un programa de empresa no se resuelve a un ETF con el ticker reciclado', () => {
+  assert.ok(!programAllowsEtf({ name: 'FACEBOOK, INC.' }));     // FB en Yahoo es un ETF de ProShares; Meta es META
+  assert.ok(programAllowsEtf({ name: 'SPDR S&P 500 ETF TRUST' }));
+  assert.ok(programAllowsEtf(undefined));                        // sin Comafi (ETFs de otros emisores) vale todo
 });
